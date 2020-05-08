@@ -1,0 +1,22 @@
+{
+  "name": "CCRegionSelector",
+  "version": "0.1.0",
+  "summary": "A short description of CCRegionSelector.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ChadChang/CCRegionSelector",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ChadChang": "chadchang.tw@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ChadChang/CCRegionSelector.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CCRegionSelector/Classes/**/*"
+}

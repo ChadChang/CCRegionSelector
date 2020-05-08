@@ -1,0 +1,6 @@
+framework module CCRegionSelector {
+  umbrella header "CCRegionSelector-umbrella.h"
+
+  export *
+  module * { export * }
+}
