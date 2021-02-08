@@ -10,4 +10,8 @@ import XCTest
 @testable import CCRegionSelector
 
 class RegionSelectorManagerTests: XCTestCase {
+    func test_init_doestNotNil() {
+        let sut = RegionSelectorManager()
+        XCTAssertNotNil(sut)
+    }
 }
