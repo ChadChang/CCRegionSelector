@@ -36,13 +36,13 @@ class RegionSelectorManagerTests: XCTestCase {
     }
 
     func test_dataloader_loadedWhenLoadData() {
-        let (sut, client) = makeSUT()
+        let (sut, loader) = makeSUT()
         sut.loadData{ _ in }
-        XCTAssertNotNil(client.message)
+        XCTAssertNotNil(loader.message)
     }
 
     func test_loadData_deliversErrorOnClientError() {
-        let (sut, client) = makeSUT()
+        let (sut, loader) = makeSUT()
         let error = NSError(domain: "test", code: 0)
         var captureError: Error?
         sut.loadData{ result in
@@ -53,17 +53,17 @@ class RegionSelectorManagerTests: XCTestCase {
                 captureError = error
             }
         }
-        client.complete(with: error)
+        loader.complete(with: error)
         XCTAssertEqual(error, captureError as! NSError)
     }
 
     // MARK: - Helpers
-    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> (sut: RegionSelectorManager, client: RegionDataLoaderSpy) {
-        let client = RegionDataLoaderSpy()
-        let sut = RegionSelectorManager(dataLoader: client)
+    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> (sut: RegionSelectorManager, loader: RegionDataLoaderSpy) {
+        let loader = RegionDataLoaderSpy()
+        let sut = RegionSelectorManager(dataLoader: loader)
         trackForMemoryLeaks(sut, file: file, line: line)
-        trackForMemoryLeaks(client, file: file, line: line)
-        return (sut, client)
+        trackForMemoryLeaks(loader, file: file, line: line)
+        return (sut, loader)
     }
 }
 
