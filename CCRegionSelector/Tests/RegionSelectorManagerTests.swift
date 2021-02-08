@@ -10,5 +10,4 @@ import XCTest
 @testable import CCRegionSelector
 
 class RegionSelectorManagerTests: XCTestCase {
-
 }

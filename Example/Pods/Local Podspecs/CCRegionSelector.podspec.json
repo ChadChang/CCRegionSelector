@@ -18,5 +18,12 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CCRegionSelector/Classes/**/*"
+  "source_files": "CCRegionSelector/Classes/**/*",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "CCRegionSelector/Tests/*.swift"
+    }
+  ]
 }

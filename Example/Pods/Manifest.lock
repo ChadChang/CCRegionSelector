@@ -1,5 +1,6 @@
 PODS:
   - CCRegionSelector (0.1.0)
+  - CCRegionSelector/Tests (0.1.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -20,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - CCRegionSelector (from `../`)
+  - CCRegionSelector/Tests (from `../`)
   - FBSnapshotTestCase
   - Nimble
   - Nimble-Snapshots
@@ -38,13 +40,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CCRegionSelector: 1cdf5898ceb3cc8ba1659a22d4be9b50eee045e0
+  CCRegionSelector: 0c6ad50a3f3ec7a8caded10cfe47841355603bb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: bbd1ab264bacc24a9ce24a8363bc05aac783aeb0
   Quick: c723104474cdb9d47787d64d1198d0246dffec94
 
-PODFILE CHECKSUM: 7e7b8037734da7fcfff9cb99d017f7d470338e37
+PODFILE CHECKSUM: d74346c41c50ee3b4be002e3d14e99065d62a152
 
 COCOAPODS: 1.10.1
