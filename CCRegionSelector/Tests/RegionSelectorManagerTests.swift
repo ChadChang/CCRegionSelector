@@ -21,7 +21,6 @@ class RegionSelectorManager {
         self.dataLoader = dataLoader
     }
 
-    @discardableResult
     func loadData(completion: @escaping (Result) -> Void) {
         self.dataLoader.load(completion: { result in
             completion(result)
@@ -41,7 +40,7 @@ class RegionSelectorManagerTests: XCTestCase {
         XCTAssertNotNil(loader.message)
     }
 
-    func test_loadData_deliversErrorOnClientError() {
+    func test_loadData_deliversErrorOnLoaderError() {
         let (sut, loader) = makeSUT()
         let error = NSError(domain: "test", code: 0)
         var captureError: Error?
@@ -54,7 +53,22 @@ class RegionSelectorManagerTests: XCTestCase {
             }
         }
         loader.complete(with: error)
-        XCTAssertEqual(error, captureError as! NSError)
+        XCTAssertEqual(error, captureError as NSError?)
+    }
+
+    func test_loadData_deliversSuccessOnLoaderSuccess() {
+        let (sut, loader) = makeSUT()
+        let exp = expectation(description: "wait for load completion")
+        sut.loadData{ result in
+            switch result {
+            case .success():
+                exp.fulfill()
+            case .failure(_):
+                XCTAssertThrowsError("Should not success")
+            }
+        }
+        loader.complete()
+        waitForExpectations(timeout: 0.1)
     }
 
     // MARK: - Helpers
@@ -79,6 +93,10 @@ class RegionDataLoaderSpy: RegionDataLoader {
 
     func complete(with error: Error) {
         message?(Result.failure(error))
+    }
+
+    func complete() {
+        message?(Result.success(Void()))
     }
 }
 
