@@ -9,6 +9,12 @@
 import XCTest
 @testable import CCRegionSelector
 
+protocol DataManipulateCommand {
+    typealias CountryCode = String
+    var params: [CountryCode] { get }
+    func execute(diallingCodeList: inout [RegionInfo])
+}
+
 typealias Result = Swift.Result<[RegionInfo], Error>
 protocol RegionDataLoader {
     func load(completion: @escaping (Result) -> Void)
@@ -21,9 +27,11 @@ class RegionSelectorManager {
         case countryCode
     }
 
-    private let dataLoader: RegionDataLoader
-    private(set) var regionInfoList: [RegionInfo] = []
+    // TODO: should not public getter only for test purpose
     private(set) var originalRegionInfoList: [RegionInfo] = []
+    private(set) var regionInfoList: [RegionInfo] = []
+    private(set) var dataManipulateCommands: [DataManipulateCommand] = []
+    private let dataLoader: RegionDataLoader
 
     init(dataLoader: RegionDataLoader) {
         self.dataLoader = dataLoader
@@ -78,6 +86,7 @@ class RegionSelectorManagerTests: XCTestCase {
         let (sut, _) = makeSUT()
         XCTAssertNotNil(sut)
         XCTAssertTrue(sut.regionInfoList.isEmpty)
+        XCTAssertTrue(sut.dataManipulateCommands.isEmpty)
     }
 
     func test_dataloader_loadedWhenLoadData() {
