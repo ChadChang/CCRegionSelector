@@ -17,7 +17,7 @@ PODS:
   - Nimble-Snapshots/Core (6.9.1):
     - iOSSnapshotTestCase (~> 5.0)
     - Nimble (~> 7.0)
-  - Quick (3.1.0)
+  - Quick (3.1.1)
 
 DEPENDENCIES:
   - CCRegionSelector (from `../`)
@@ -40,12 +40,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CCRegionSelector: 0c6ad50a3f3ec7a8caded10cfe47841355603bb8
+  CCRegionSelector: 37a56f691f48b3caaa4b609abfb147bc884f1bc8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: bbd1ab264bacc24a9ce24a8363bc05aac783aeb0
-  Quick: c723104474cdb9d47787d64d1198d0246dffec94
+  Quick: ea9a702cdf4bfd561c47006f1e48c084dfca309e
 
 PODFILE CHECKSUM: d74346c41c50ee3b4be002e3d14e99065d62a152
 
