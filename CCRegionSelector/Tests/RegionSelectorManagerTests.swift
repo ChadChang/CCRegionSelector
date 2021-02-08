@@ -21,15 +21,21 @@ struct RegionInfo: Codable, Equatable {
     }
 }
 
-
 typealias Result = Swift.Result<[RegionInfo], Error>
 protocol RegionDataLoader {
     func load(completion: @escaping (Result) -> Void)
 }
 
 class RegionSelectorManager {
+    enum SortType {
+        case name
+        case dialCode
+        case countryCode
+    }
+
     private let dataLoader: RegionDataLoader
     private(set) var regionInfoList: [RegionInfo] = []
+    private(set) var originalRegionInfoList: [RegionInfo] = []
 
     init(dataLoader: RegionDataLoader) {
         self.dataLoader = dataLoader
@@ -39,12 +45,43 @@ class RegionSelectorManager {
         self.dataLoader.load(completion: { [weak self] result in
             switch result {
             case let .success(items):
+                self?.originalRegionInfoList = items
                 self?.regionInfoList = items
                 completion(.success(items))
             case .failure(_):
                 completion(result)
             }
         })
+    }
+
+    func sort(by type: SortType) {
+        switch type {
+        case .name:
+            self.regionInfoList = self.originalRegionInfoList.sorted(by: \.name)
+        case .dialCode:
+            self.regionInfoList = self.originalRegionInfoList.sorted(by: \.dialCode)
+        case .countryCode:
+            self.regionInfoList = self.originalRegionInfoList.sorted(by: \.countyCode)
+        }
+    }
+}
+
+extension Array where Element == RegionInfo {
+    mutating func sorted<T: Comparable>(by keyPath: KeyPath<Element, T>) -> [Element] {
+        return sorted { objA, objB in
+            return objA[keyPath: keyPath] < objB[keyPath: keyPath]
+        }
+    }
+
+    func rearrange(fromIndex: Int, toIndex: Int) -> [Element] {
+        var array = self
+        let element = array.remove(at: fromIndex)
+        array.insert(element, at: toIndex)
+        return array
+    }
+
+    func findByCountryCode(_ code: String) -> Element? {
+        return self.first { $0.countyCode == code }
     }
 }
 
@@ -96,19 +133,42 @@ class RegionSelectorManagerTests: XCTestCase {
     func test_loadData_deliverItemsOnLoaderSuccess() {
         let (sut, loader) = makeSUT()
         let exp = expectation(description: "wait for load completion")
-        let item1 = makeItem(name: "name", countryCode: "anyCountryCode", dialCode: "code")
-        let item2 = makeItem(name: "another_name", countryCode: "another_anyCountryCode", dialCode: "another_code")
+        let items = makeItems()
         sut.loadData{ [weak sut] result in
             switch result {
             case .success(_):
-                XCTAssertEqual(sut?.regionInfoList, [item1, item2])
+                XCTAssertEqual(sut?.regionInfoList, items)
             case .failure(_):
                 XCTAssertThrowsError("Should not success")
             }
             exp.fulfill()
         }
-        loader.complete(withItems: [item1,item2])
+        loader.complete(withItems: items)
         waitForExpectations(timeout: 0.1)
+    }
+
+    func test_sort_byNameSuccess() {
+        let (sut, _) = makeSUT()
+        let items = makeItems()
+        sut.simulateDataLoaded(items: items)
+        sut.sort(by: .name)
+        XCTAssertEqual(sut.regionInfoList, [items.findByCountryCode("GR"), items.findByCountryCode("TW"), items.findByCountryCode("US")])
+    }
+
+    func test_sort_byCountryCodeSuccess() {
+        let (sut, _) = makeSUT()
+        let items = makeItems()
+        sut.simulateDataLoaded(items: items)
+        sut.sort(by: .countryCode)
+        XCTAssertEqual(sut.regionInfoList, [items.findByCountryCode("GR"), items.findByCountryCode("TW"), items.findByCountryCode("US")])
+    }
+
+    func test_sort_byDialCodeSuccess() {
+        let (sut, _) = makeSUT()
+        let items = makeItems()
+        sut.simulateDataLoaded(items: items)
+        sut.sort(by: .dialCode)
+        XCTAssertEqual(sut.regionInfoList, [items.findByCountryCode("US"), items.findByCountryCode("GR"), items.findByCountryCode("TW")])
     }
 
     // MARK: - Helpers
@@ -120,9 +180,23 @@ class RegionSelectorManagerTests: XCTestCase {
         return (sut, loader)
     }
 
+    private func makeItems() -> [RegionInfo] {
+        let item1 = RegionInfo(name: "Taiwan", countyCode: "TW", dialCode: "+886")
+        let item2 = RegionInfo(name: "United States", countyCode: "US", dialCode: "+1")
+        let item3 = RegionInfo(name: "Greece", countyCode: "GR", dialCode: "+30")
+        return [item1, item2, item3]
+    }
+
     private func makeItem(name: String, countryCode: String, dialCode: String) -> RegionInfo {
         let item = RegionInfo(name: name, countyCode: countryCode, dialCode: dialCode)
         return item
+    }
+}
+
+extension RegionSelectorManager {
+    func simulateDataLoaded(items: [RegionInfo]) {
+        self.regionInfoList = items
+        self.originalRegionInfoList = items
     }
 }
 
