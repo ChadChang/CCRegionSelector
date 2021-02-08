@@ -10,7 +10,7 @@ import XCTest
 @testable import CCRegionSelector
 
 protocol RegionDataLoader {
-
+    func load()
 }
 
 class RegionSelectorManager {
@@ -18,6 +18,9 @@ class RegionSelectorManager {
 
     init(dataLoader: RegionDataLoader) {
         self.dataLoader = dataLoader
+    }
+    func loadData() {
+        self.dataLoader.load()
     }
 }
 
@@ -27,8 +30,14 @@ class RegionSelectorManagerTests: XCTestCase {
         XCTAssertNotNil(sut)
     }
 
+    func test_dataloader_loadedWhenLoadData() {
+        let (sut, client) = makeSUT()
+        sut.loadData()
+        XCTAssertTrue(client.isLoaded)
+    }
+
     // MARK: - Helpers
-    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> (sut: RegionSelectorManager, client: RegionDataLoader) {
+    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> (sut: RegionSelectorManager, client: RegionDataLoaderSpy) {
         let client = RegionDataLoaderSpy()
         let sut = RegionSelectorManager(dataLoader: client)
         trackForMemoryLeaks(sut, file: file, line: line)
@@ -37,8 +46,11 @@ class RegionSelectorManagerTests: XCTestCase {
     }
 }
 
-class RegionDataLoaderSpy: RegionDataLoader{
-
+class RegionDataLoaderSpy: RegionDataLoader {
+    var isLoaded: Bool = false
+    func load() {
+        isLoaded = true
+    }
 }
 
 
