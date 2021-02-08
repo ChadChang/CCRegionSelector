@@ -9,8 +9,9 @@
 import XCTest
 @testable import CCRegionSelector
 
+typealias Result = Swift.Result<Void, Error>
 protocol RegionDataLoader {
-    func load()
+    func load(completion: @escaping (Result) -> Void)
 }
 
 class RegionSelectorManager {
@@ -19,8 +20,12 @@ class RegionSelectorManager {
     init(dataLoader: RegionDataLoader) {
         self.dataLoader = dataLoader
     }
-    func loadData() {
-        self.dataLoader.load()
+
+    @discardableResult
+    func loadData(completion: @escaping (Result) -> Void) {
+        self.dataLoader.load(completion: { result in
+            completion(result)
+        })
     }
 }
 
@@ -32,8 +37,24 @@ class RegionSelectorManagerTests: XCTestCase {
 
     func test_dataloader_loadedWhenLoadData() {
         let (sut, client) = makeSUT()
-        sut.loadData()
-        XCTAssertTrue(client.isLoaded)
+        sut.loadData{ _ in }
+        XCTAssertNotNil(client.message)
+    }
+
+    func test_loadData_deliversErrorOnClientError() {
+        let (sut, client) = makeSUT()
+        let error = NSError(domain: "test", code: 0)
+        var captureError: Error?
+        sut.loadData{ result in
+            switch result {
+            case .success():
+                XCTAssertThrowsError("Should not success")
+            case let .failure(error):
+                captureError = error
+            }
+        }
+        client.complete(with: error)
+        XCTAssertEqual(error, captureError as! NSError)
     }
 
     // MARK: - Helpers
@@ -48,8 +69,16 @@ class RegionSelectorManagerTests: XCTestCase {
 
 class RegionDataLoaderSpy: RegionDataLoader {
     var isLoaded: Bool = false
-    func load() {
-        isLoaded = true
+    var error: Error?
+    typealias Message = ((Result) -> Void)
+    var message: Message?
+
+    func load(completion: @escaping (Result) -> Void) {
+        message = completion
+    }
+
+    func complete(with error: Error) {
+        message?(Result.failure(error))
     }
 }
 
