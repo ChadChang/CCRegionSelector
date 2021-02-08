@@ -40,7 +40,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CCRegionSelector: 37a56f691f48b3caaa4b609abfb147bc884f1bc8
+  CCRegionSelector: ba3da638135bd75d7dc56b8887b2ce809e5cd570
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37

@@ -19,11 +19,7 @@
     "ios": "8.0"
   },
   "source_files": "CCRegionSelector/Classes/**/*",
-  "resource_bundles": {
-    "CCRegionSelector": [
-      "CCRegionSelector/Assets/*.*"
-    ]
-  },
+  "resources": "CCRegionSelector/Assets/*.{json}",
   "testspecs": [
     {
       "name": "Tests",
