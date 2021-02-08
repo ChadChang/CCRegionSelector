@@ -40,13 +40,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CCRegionSelector: ba3da638135bd75d7dc56b8887b2ce809e5cd570
+  CCRegionSelector: 3d9fc1e4bb3a86786366e7aa8ab3ed50bdba8af4
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: bbd1ab264bacc24a9ce24a8363bc05aac783aeb0
   Quick: ea9a702cdf4bfd561c47006f1e48c084dfca309e
 
-PODFILE CHECKSUM: d74346c41c50ee3b4be002e3d14e99065d62a152
+PODFILE CHECKSUM: 0cb97363e85552897700bb117bb8db522cf888d0
 
 COCOAPODS: 1.10.1
