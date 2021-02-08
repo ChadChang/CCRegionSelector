@@ -29,14 +29,21 @@ protocol RegionDataLoader {
 
 class RegionSelectorManager {
     private let dataLoader: RegionDataLoader
+    private(set) var regionInfoList: [RegionInfo] = []
 
     init(dataLoader: RegionDataLoader) {
         self.dataLoader = dataLoader
     }
 
     func loadData(completion: @escaping (Result) -> Void) {
-        self.dataLoader.load(completion: { result in
-            completion(result)
+        self.dataLoader.load(completion: { [weak self] result in
+            switch result {
+            case let .success(items):
+                self?.regionInfoList = items
+                completion(.success(items))
+            case .failure(_):
+                completion(result)
+            }
         })
     }
 }
@@ -45,6 +52,7 @@ class RegionSelectorManagerTests: XCTestCase {
     func test_init_doestNotNil() {
         let (sut, _) = makeSUT()
         XCTAssertNotNil(sut)
+        XCTAssertTrue(sut.regionInfoList.isEmpty)
     }
 
     func test_dataloader_loadedWhenLoadData() {
@@ -72,10 +80,10 @@ class RegionSelectorManagerTests: XCTestCase {
     func test_loadData_deliversEmptyOnLoaderGetEmpty() {
         let (sut, loader) = makeSUT()
         let exp = expectation(description: "wait for load completion")
-        sut.loadData{ result in
+        sut.loadData{ [weak sut] result in
             switch result {
-            case let .success(items):
-                XCTAssertEqual(items, [])
+            case .success(_):
+                XCTAssertEqual(sut?.regionInfoList, [])
             case .failure(_):
                 XCTAssertThrowsError("Should not success")
             }
@@ -90,10 +98,10 @@ class RegionSelectorManagerTests: XCTestCase {
         let exp = expectation(description: "wait for load completion")
         let item1 = makeItem(name: "name", countryCode: "anyCountryCode", dialCode: "code")
         let item2 = makeItem(name: "another_name", countryCode: "another_anyCountryCode", dialCode: "another_code")
-        sut.loadData{ result in
+        sut.loadData{ [weak sut] result in
             switch result {
-            case let .success(items):
-                XCTAssertEqual(items, [item1, item2])
+            case .success(_):
+                XCTAssertEqual(sut?.regionInfoList, [item1, item2])
             case .failure(_):
                 XCTAssertThrowsError("Should not success")
             }
