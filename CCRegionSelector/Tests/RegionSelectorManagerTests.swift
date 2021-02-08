@@ -9,18 +9,6 @@
 import XCTest
 @testable import CCRegionSelector
 
-struct RegionInfo: Codable, Equatable {
-    let name: String
-    let countyCode: String
-    let dialCode: String
-
-    enum CodingKeys: String, CodingKey {
-        case countyCode = "code"
-        case name
-        case dialCode
-    }
-}
-
 typealias Result = Swift.Result<[RegionInfo], Error>
 protocol RegionDataLoader {
     func load(completion: @escaping (Result) -> Void)
@@ -218,6 +206,4 @@ class RegionDataLoaderSpy: RegionDataLoader {
         message?(Result.success(items))
     }
 }
-
-
 

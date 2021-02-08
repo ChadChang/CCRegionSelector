@@ -165,6 +165,7 @@
 		D783DA148BBEFBFE9FC7FC21D265AD24 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 87978A0757E507C08C5F388E1EF0DB89 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		DA0DA6C2D7C6235862E9A6929144EBA5 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD06B7B0494F11A2577283B15D5E9D /* SourceLocation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DCC243D2AEC18F6FD827742DCBCC4D1E /* ContainElementSatisfying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA00E594E976B49C8EE1506292BA1AB /* ContainElementSatisfying.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		DCCE68FF25D1AC3F00A6CFA9 /* RegionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCE68FE25D1AC3F00A6CFA9 /* RegionInfo.swift */; };
 		DEF6305C7FCCD86B037E3811551D16E6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925934A7A6E12ACD11CA497E3EB53FC1 /* Errors.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		E1216911C249E3FC383CE5EE1E1066F3 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9F70816AA795F8C5A19D6409843B /* Contain.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		E13A402A9E8C24FC2F4FDD1F9DE60BCD /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8B81E81136CF584B217EB21D1F1F29 /* FBSnapshotTestCase.framework */; };
@@ -457,6 +458,7 @@
 		DBC8DDC4AA372FAC9EDB9F9F56A6EE01 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
 		DBFC118DAAC3F62AD6E48F2CB4509047 /* CCRegionSelector-Unit-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CCRegionSelector-Unit-Tests-frameworks.sh"; sourceTree = "<group>"; };
 		DC2FDDA42D3370CBD2FC4A25B381D739 /* Nimble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.release.xcconfig; sourceTree = "<group>"; };
+		DCCE68FE25D1AC3F00A6CFA9 /* RegionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionInfo.swift; sourceTree = "<group>"; };
 		DD121BD8CA0154DC2500571CA05DB3FE /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		DDC56DA6A0F5E0991D97A1EC5341DE1A /* QuickSpecBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpecBase.h; path = Sources/QuickObjCRuntime/include/QuickSpecBase.h; sourceTree = "<group>"; };
 		DE412BD6F41C4F0CB5AF6CF5F1D89996 /* String+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+C99ExtendedIdentifier.swift"; path = "Sources/Quick/String+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
@@ -690,6 +692,7 @@
 		563D235DF7D878BACB96F5CB82174CDE /* CCRegionSelector */ = {
 			isa = PBXGroup;
 			children = (
+				DCCE68FD25D1AC2F00A6CFA9 /* Model */,
 				C5339C5D5D2C1CE6EB8AD439D7096D81 /* diallingcode.json */,
 				16A943B9A9F5084CF0D4437D92C62BC4 /* RegionSelectorManager.swift */,
 				ADCF5C83C163439937D8739768493857 /* Pod */,
@@ -906,6 +909,14 @@
 			);
 			name = "Pods-CCRegionSelector_Example";
 			path = "Target Support Files/Pods-CCRegionSelector_Example";
+			sourceTree = "<group>";
+		};
+		DCCE68FD25D1AC2F00A6CFA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCCE68FE25D1AC3F00A6CFA9 /* RegionInfo.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		EBDF26C5D621F394A498277EA0694C6D /* Frameworks */ = {
@@ -1544,6 +1555,7 @@
 			files = (
 				EC756D2037321FD90AD97E5E95ACCC05 /* CCRegionSelector-dummy.m in Sources */,
 				D1FE6C696A5F297CBD0A008046E2025A /* RegionSelectorManager.swift in Sources */,
+				DCCE68FF25D1AC3F00A6CFA9 /* RegionInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
