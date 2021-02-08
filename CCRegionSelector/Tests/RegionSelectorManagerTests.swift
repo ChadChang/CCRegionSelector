@@ -9,6 +9,11 @@
 import XCTest
 @testable import CCRegionSelector
 
+class RegionSelectorManager {
+
+
+}
+
 class RegionSelectorManagerTests: XCTestCase {
     func test_init_doestNotNil() {
         let sut = RegionSelectorManager()
