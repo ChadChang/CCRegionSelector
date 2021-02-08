@@ -9,7 +9,20 @@
 import XCTest
 @testable import CCRegionSelector
 
-typealias Result = Swift.Result<Void, Error>
+struct RegionInfo: Codable, Equatable {
+    let name: String
+    let countyCode: String
+    let dialCode: String
+
+    enum CodingKeys: String, CodingKey {
+        case countyCode = "code"
+        case name
+        case dialCode
+    }
+}
+
+
+typealias Result = Swift.Result<[RegionInfo], Error>
 protocol RegionDataLoader {
     func load(completion: @escaping (Result) -> Void)
 }
@@ -46,7 +59,7 @@ class RegionSelectorManagerTests: XCTestCase {
         var captureError: Error?
         sut.loadData{ result in
             switch result {
-            case .success():
+            case .success(_):
                 XCTAssertThrowsError("Should not success")
             case let .failure(error):
                 captureError = error
@@ -56,18 +69,37 @@ class RegionSelectorManagerTests: XCTestCase {
         XCTAssertEqual(error, captureError as NSError?)
     }
 
-    func test_loadData_deliversSuccessOnLoaderSuccess() {
+    func test_loadData_deliversEmptyOnLoaderGetEmpty() {
         let (sut, loader) = makeSUT()
         let exp = expectation(description: "wait for load completion")
         sut.loadData{ result in
             switch result {
-            case .success():
-                exp.fulfill()
+            case let .success(items):
+                XCTAssertEqual(items, [])
             case .failure(_):
                 XCTAssertThrowsError("Should not success")
             }
+            exp.fulfill()
         }
-        loader.complete()
+        loader.complete(withItems: [])
+        waitForExpectations(timeout: 0.1)
+    }
+
+    func test_loadData_deliverItemsOnLoaderSuccess() {
+        let (sut, loader) = makeSUT()
+        let exp = expectation(description: "wait for load completion")
+        let item1 = makeItem(name: "name", countryCode: "anyCountryCode", dialCode: "code")
+        let item2 = makeItem(name: "another_name", countryCode: "another_anyCountryCode", dialCode: "another_code")
+        sut.loadData{ result in
+            switch result {
+            case let .success(items):
+                XCTAssertEqual(items, [item1, item2])
+            case .failure(_):
+                XCTAssertThrowsError("Should not success")
+            }
+            exp.fulfill()
+        }
+        loader.complete(withItems: [item1,item2])
         waitForExpectations(timeout: 0.1)
     }
 
@@ -78,6 +110,11 @@ class RegionSelectorManagerTests: XCTestCase {
         trackForMemoryLeaks(sut, file: file, line: line)
         trackForMemoryLeaks(loader, file: file, line: line)
         return (sut, loader)
+    }
+
+    private func makeItem(name: String, countryCode: String, dialCode: String) -> RegionInfo {
+        let item = RegionInfo(name: name, countyCode: countryCode, dialCode: dialCode)
+        return item
     }
 }
 
@@ -95,8 +132,8 @@ class RegionDataLoaderSpy: RegionDataLoader {
         message?(Result.failure(error))
     }
 
-    func complete() {
-        message?(Result.success(Void()))
+    func complete(withItems items:[RegionInfo]) {
+        message?(Result.success(items))
     }
 }
 
