@@ -104,16 +104,19 @@ class RegionSelectorManagerTests: XCTestCase {
         let (sut, loader) = makeSUT()
         let error = NSError(domain: "test", code: 0)
         var captureError: Error?
+        let exp = expectation(description: "wait for load completion")
         sut.loadData{ result in
             switch result {
             case .success(_):
                 XCTFail("Should not success")
             case let .failure(error):
                 captureError = error
+                XCTAssertEqual(error as NSError?, captureError as NSError?)
             }
+            exp.fulfill()
         }
         loader.complete(with: error)
-        XCTAssertEqual(error, captureError as NSError?)
+        waitForExpectations(timeout: 0.1)
     }
 
     func test_loadData_deliversEmptyOnLoaderGetEmpty() {
