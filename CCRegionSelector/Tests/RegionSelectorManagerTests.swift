@@ -94,10 +94,10 @@ class RegionSelectorManagerTests: XCTestCase {
         XCTAssertTrue(sut.dataManipulateCommands.isEmpty)
     }
 
-    func test_dataloader_loadedWhenLoadData() {
+    func test_loader_loadedOnlyOnceWhenLoadData() {
         let (sut, loader) = makeSUT()
         sut.loadData{ _ in }
-        XCTAssertNotNil(loader.message)
+        XCTAssertEqual(loader.messages.count, 1)
     }
 
     func test_loadData_deliversErrorOnLoaderError() {
@@ -215,18 +215,18 @@ class RegionDataLoaderSpy: RegionDataLoader {
     var isLoaded: Bool = false
     var error: Error?
     typealias Message = ((Result) -> Void)
-    var message: Message?
+    var messages: [Message] = []
 
     func load(completion: @escaping (Result) -> Void) {
-        message = completion
+        messages.append(completion)
     }
 
     func complete(with error: Error) {
-        message?(Result.failure(error))
+        messages[0](Result.failure(error))
     }
 
     func complete(withItems items:[RegionInfo]) {
-        message?(Result.success(items))
+        messages[0](Result.success(items))
     }
 }
 
