@@ -60,6 +60,12 @@ class RegionSelectorManager {
             self.regionInfoList = self.originalRegionInfoList.sorted(by: \.countyCode)
         }
     }
+
+    func execute(command: DataManipulateCommand) {
+        guard self.regionInfoList.count > 0 else { return }
+        dataManipulateCommands.append(command)
+        command.execute(diallingCodeList: &self.regionInfoList)
+    }
 }
 
 extension Array where Element == RegionInfo {
@@ -168,6 +174,15 @@ class RegionSelectorManagerTests: XCTestCase {
         XCTAssertEqual(sut.regionInfoList, [items.findByCountryCode("US"), items.findByCountryCode("GR"), items.findByCountryCode("TW")])
     }
 
+    func test_command_executedWhenCallExecute() {
+        let (sut, _) = makeSUT()
+        let items = makeItems()
+        sut.simulateDataLoaded(items: items)
+        let dataManipulateCommand = DataManipulateCommandSpy()
+        sut.execute(command: dataManipulateCommand)
+        XCTAssertTrue(dataManipulateCommand.isExecuted)
+    }
+
     // MARK: - Helpers
     private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> (sut: RegionSelectorManager, loader: RegionDataLoaderSpy) {
         let loader = RegionDataLoaderSpy()
@@ -213,6 +228,15 @@ class RegionDataLoaderSpy: RegionDataLoader {
 
     func complete(withItems items:[RegionInfo]) {
         message?(Result.success(items))
+    }
+}
+
+class DataManipulateCommandSpy: DataManipulateCommand {
+    private(set) var isExecuted = false
+    var params: [CountryCode] = []
+
+    func execute(diallingCodeList: inout [RegionInfo]) {
+        isExecuted = true
     }
 }
 
