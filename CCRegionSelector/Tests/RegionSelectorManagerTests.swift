@@ -107,7 +107,7 @@ class RegionSelectorManagerTests: XCTestCase {
         sut.loadData{ result in
             switch result {
             case .success(_):
-                XCTAssertThrowsError("Should not success")
+                XCTFail("Should not success")
             case let .failure(error):
                 captureError = error
             }
@@ -124,7 +124,7 @@ class RegionSelectorManagerTests: XCTestCase {
             case .success(_):
                 XCTAssertEqual(sut?.regionInfoList, [])
             case .failure(_):
-                XCTAssertThrowsError("Should not success")
+                XCTFail("Should not success")
             }
             exp.fulfill()
         }
