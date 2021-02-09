@@ -90,7 +90,6 @@ extension Array where Element == RegionInfo {
 class RegionSelectorManagerTests: XCTestCase {
     func test_init_doestNotNil() {
         let (sut, _) = makeSUT()
-        XCTAssertNotNil(sut)
         XCTAssertTrue(sut.regionInfoList.isEmpty)
         XCTAssertTrue(sut.dataManipulateCommands.isEmpty)
     }
