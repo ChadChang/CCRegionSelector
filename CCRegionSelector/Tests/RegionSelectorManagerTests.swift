@@ -122,10 +122,10 @@ class RegionSelectorManagerTests: XCTestCase {
     func test_loadData_deliversEmptyOnLoaderGetEmpty() {
         let (sut, loader) = makeSUT()
         let exp = expectation(description: "wait for load completion")
-        sut.loadData{ [weak sut] result in
+        sut.loadData{ result in
             switch result {
-            case .success(_):
-                XCTAssertEqual(sut?.regionInfoList, [])
+            case .success(let loadedItems):
+                XCTAssertEqual(loadedItems, [])
             case .failure(_):
                 XCTFail("Should not success")
             }
@@ -133,23 +133,25 @@ class RegionSelectorManagerTests: XCTestCase {
         }
         loader.complete(withItems: [])
         waitForExpectations(timeout: 0.1)
+        XCTAssertEqual(sut.regionInfoList, [])
     }
 
     func test_loadData_deliverItemsOnLoaderSuccess() {
         let (sut, loader) = makeSUT()
         let exp = expectation(description: "wait for load completion")
         let items = makeItems()
-        sut.loadData{ [weak sut] result in
+        sut.loadData{ result in
             switch result {
-            case .success(_):
-                XCTAssertEqual(sut?.regionInfoList, items)
+            case let .success(loadedItems):
+                XCTAssertEqual(loadedItems, items)
             case .failure(_):
-                XCTAssertThrowsError("Should not success")
+                XCTFail("Should not success")
             }
             exp.fulfill()
         }
         loader.complete(withItems: items)
         waitForExpectations(timeout: 0.1)
+        XCTAssertEqual(sut.regionInfoList, items)
     }
 
     func test_sort_byNameSuccess() {
