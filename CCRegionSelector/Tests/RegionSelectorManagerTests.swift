@@ -59,6 +59,10 @@ class RegionSelectorManager {
         case .countryCode:
             self.regionInfoList = self.originalRegionInfoList.sorted(by: \.countyCode)
         }
+
+        dataManipulateCommands.forEach {
+            $0.execute(diallingCodeList: &self.regionInfoList)
+        }
     }
 
     func execute(command: DataManipulateCommand) {
@@ -187,8 +191,20 @@ class RegionSelectorManagerTests: XCTestCase {
 
         let dataManipulateCommand = DataManipulateCommandSpy()
         sut.execute(command: dataManipulateCommand)
-        
-        XCTAssertTrue(dataManipulateCommand.isExecuted)
+
+        XCTAssertEqual(dataManipulateCommand.executedTimes, 1)
+    }
+
+    func test_command_executedAgainAfterSorted() {
+        let items = makeItems()
+        let itemsList = items.list
+        let (sut, _) = makeLoadedSUT(items: itemsList)
+        let dataManipulateCommand = DataManipulateCommandSpy()
+        sut.execute(command: dataManipulateCommand)
+
+        sut.sort(by: .dialCode)
+
+        XCTAssertEqual(dataManipulateCommand.executedTimes, 2)
     }
 
     // MARK: - Helpers
@@ -266,11 +282,11 @@ class RegionDataLoaderSpy: RegionDataLoader {
 }
 
 class DataManipulateCommandSpy: DataManipulateCommand {
-    private(set) var isExecuted = false
+    private(set) var executedTimes = 0
     var params: [CountryCode] = []
 
     func execute(diallingCodeList: inout [RegionInfo]) {
-        isExecuted = true
+        executedTimes += 1
     }
 }
 
