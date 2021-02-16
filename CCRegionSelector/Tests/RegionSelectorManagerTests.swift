@@ -69,7 +69,7 @@ class RegionSelectorManager {
 }
 
 class RegionSelectorManagerTests: XCTestCase {
-    func test_init_doestNotNil() {
+    func test_init_withPropertiesAllEmpty() {
         let (sut, _) = makeSUT()
 
         XCTAssertTrue(sut.regionInfoList.isEmpty)
