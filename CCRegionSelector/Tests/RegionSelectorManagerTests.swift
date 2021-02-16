@@ -68,25 +68,6 @@ class RegionSelectorManager {
     }
 }
 
-extension Array where Element == RegionInfo {
-    mutating func sorted<T: Comparable>(by keyPath: KeyPath<Element, T>) -> [Element] {
-        return sorted { objA, objB in
-            return objA[keyPath: keyPath] < objB[keyPath: keyPath]
-        }
-    }
-
-    func rearrange(fromIndex: Int, toIndex: Int) -> [Element] {
-        var array = self
-        let element = array.remove(at: fromIndex)
-        array.insert(element, at: toIndex)
-        return array
-    }
-
-    func findByCountryCode(_ code: String) -> Element? {
-        return self.first { $0.countyCode == code }
-    }
-}
-
 class RegionSelectorManagerTests: XCTestCase {
     func test_init_doestNotNil() {
         let (sut, _) = makeSUT()
