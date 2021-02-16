@@ -180,14 +180,16 @@ class RegionSelectorManagerTests: XCTestCase {
         XCTAssertEqual(sut.regionInfoList, [itemsTurple.US, itemsTurple.GR, itemsTurple.TW])
     }
 
-//    func test_command_executedWhenCallExecute() {
-//        let (sut, _) = makeSUT()
-//        let items = makeItems()
-//        sut.simulateDataLoaded(items: [items.TW, items.US, items.GR])
-//        let dataManipulateCommand = DataManipulateCommandSpy()
-//        sut.execute(command: dataManipulateCommand)
-//        XCTAssertTrue(dataManipulateCommand.isExecuted)
-//    }
+    func test_command_executedWhenCallExecute() {
+        let items = makeItems()
+        let itemsList = items.list
+        let (sut, _) = makeLoadedSUT(items: itemsList)
+
+        let dataManipulateCommand = DataManipulateCommandSpy()
+        sut.execute(command: dataManipulateCommand)
+        
+        XCTAssertTrue(dataManipulateCommand.isExecuted)
+    }
 
     // MARK: - Helpers
     private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> (sut: RegionSelectorManager, loader: RegionDataLoaderSpy) {
