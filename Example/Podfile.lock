@@ -1,39 +1,10 @@
 PODS:
   - CCRegionSelector (0.1.0)
   - CCRegionSelector/Tests (0.1.0)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - iOSSnapshotTestCase (5.0.2):
-    - iOSSnapshotTestCase/SwiftSupport (= 5.0.2)
-  - iOSSnapshotTestCase/Core (5.0.2)
-  - iOSSnapshotTestCase/SwiftSupport (5.0.2):
-    - iOSSnapshotTestCase/Core
-  - Nimble (7.3.4)
-  - Nimble-Snapshots (6.9.1):
-    - Nimble-Snapshots/Core (= 6.9.1)
-  - Nimble-Snapshots/Core (6.9.1):
-    - iOSSnapshotTestCase (~> 5.0)
-    - Nimble (~> 7.0)
-  - Quick (3.1.1)
 
 DEPENDENCIES:
   - CCRegionSelector (from `../`)
   - CCRegionSelector/Tests (from `../`)
-  - FBSnapshotTestCase
-  - Nimble
-  - Nimble-Snapshots
-  - Quick
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
-    - iOSSnapshotTestCase
-    - Nimble
-    - Nimble-Snapshots
-    - Quick
 
 EXTERNAL SOURCES:
   CCRegionSelector:
@@ -41,12 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CCRegionSelector: 3d9fc1e4bb3a86786366e7aa8ab3ed50bdba8af4
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
-  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  Nimble-Snapshots: bbd1ab264bacc24a9ce24a8363bc05aac783aeb0
-  Quick: ea9a702cdf4bfd561c47006f1e48c084dfca309e
 
-PODFILE CHECKSUM: 0cb97363e85552897700bb117bb8db522cf888d0
+PODFILE CHECKSUM: 542b0f5d02754516ea5697b74f538ea9c1afc559
 
 COCOAPODS: 1.10.1
