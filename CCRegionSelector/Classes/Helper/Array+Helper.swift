@@ -22,6 +22,6 @@ extension Array where Element == RegionInfo {
     }
 
     func findByCountryCode(_ code: String) -> Element? {
-        return self.first { $0.countyCode == code }
+        return self.first { $0.countryCode == code }
     }
 }

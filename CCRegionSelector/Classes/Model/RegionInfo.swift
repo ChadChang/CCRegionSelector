@@ -9,11 +9,11 @@ import Foundation
 
 struct RegionInfo: Codable, Equatable {
     let name: String
-    let countyCode: String
+    let countryCode: String
     let dialCode: String
 
     enum CodingKeys: String, CodingKey {
-        case countyCode = "code"
+        case countryCode = "code"
         case name
         case dialCode
     }

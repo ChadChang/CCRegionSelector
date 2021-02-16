@@ -57,7 +57,7 @@ class RegionSelectorManager {
         case .dialCode:
             self.regionInfoList = self.originalRegionInfoList.sorted(by: \.dialCode)
         case .countryCode:
-            self.regionInfoList = self.originalRegionInfoList.sorted(by: \.countyCode)
+            self.regionInfoList = self.originalRegionInfoList.sorted(by: \.countryCode)
         }
 
         dataManipulateCommands.forEach {
@@ -226,7 +226,7 @@ class RegionSelectorManagerTests: XCTestCase {
     }
 
     private func makeItem(name: String, countryCode: String, dialCode: String) -> RegionInfo {
-        let item = RegionInfo(name: name, countyCode: countryCode, dialCode: dialCode)
+        let item = RegionInfo(name: name, countryCode: countryCode, dialCode: dialCode)
         return item
     }
 
@@ -240,17 +240,17 @@ class RegionSelectorManagerTests: XCTestCase {
     }
 
     private func makeTWItem() -> RegionInfo {
-        let item = RegionInfo(name: "Taiwan", countyCode: "TW", dialCode: "+886")
+        let item = RegionInfo(name: "Taiwan", countryCode: "TW", dialCode: "+886")
         return item
     }
 
     private func makeUSItem() -> RegionInfo {
-        let item = RegionInfo(name: "United States", countyCode: "US", dialCode: "+1")
+        let item = RegionInfo(name: "United States", countryCode: "US", dialCode: "+1")
         return item
     }
 
     private func makeGreeceItem() -> RegionInfo {
-        let item = RegionInfo(name: "Greece", countyCode: "GR", dialCode: "+30")
+        let item = RegionInfo(name: "Greece", countryCode: "GR", dialCode: "+30")
         return item
     }
 }
