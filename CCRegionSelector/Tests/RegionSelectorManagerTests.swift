@@ -71,18 +71,22 @@ class RegionSelectorManager {
 class RegionSelectorManagerTests: XCTestCase {
     func test_init_doestNotNil() {
         let (sut, _) = makeSUT()
+
         XCTAssertTrue(sut.regionInfoList.isEmpty)
         XCTAssertTrue(sut.dataManipulateCommands.isEmpty)
     }
 
     func test_loader_loadedOnlyOnceWhenLoadData() {
         let (sut, loader) = makeSUT()
+
         sut.loadData{ _ in }
+
         XCTAssertEqual(loader.messages.count, 1)
     }
 
     func test_loadData_deliversErrorOnLoaderError() {
         let (sut, loader) = makeSUT()
+
         let error = NSError(domain: "test", code: 0)
         var captureError: Error?
         let exp = expectation(description: "wait for load completion")
@@ -96,12 +100,15 @@ class RegionSelectorManagerTests: XCTestCase {
             }
             exp.fulfill()
         }
+
         loader.complete(with: error)
+
         waitForExpectations(timeout: 0.1)
     }
 
     func test_loadData_deliversEmptyOnLoaderGetEmpty() {
         let (sut, loader) = makeSUT()
+
         let exp = expectation(description: "wait for load completion")
         sut.loadData{ result in
             switch result {
@@ -112,13 +119,16 @@ class RegionSelectorManagerTests: XCTestCase {
             }
             exp.fulfill()
         }
+
         loader.complete(withItems: [])
+
         waitForExpectations(timeout: 0.1)
         XCTAssertEqual(sut.regionInfoList, [])
     }
 
     func test_loadData_deliverItemsOnLoaderSuccess() {
         let (sut, loader) = makeSUT()
+
         let exp = expectation(description: "wait for load completion")
         let items = makeItems().list
         sut.loadData{ result in
@@ -130,7 +140,9 @@ class RegionSelectorManagerTests: XCTestCase {
             }
             exp.fulfill()
         }
+
         loader.complete(withItems: items)
+
         waitForExpectations(timeout: 0.1)
         XCTAssertEqual(sut.regionInfoList, items)
     }
