@@ -28,15 +28,15 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/ChadChang/CCRegionSelector.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'CCRegionSelector/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CCRegionSelector' => ['CCRegionSelector/Assets/*.png']
-  # }
+  s.resources = 'CCRegionSelector/Assets/*.{json}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'CCRegionSelector/Tests/*.swift'
+  end
 end

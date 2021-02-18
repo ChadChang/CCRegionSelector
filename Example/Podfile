@@ -1,14 +1,16 @@
 use_frameworks!
+platform:ios, 12.0
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 
 target 'CCRegionSelector_Example' do
-  pod 'CCRegionSelector', :path => '../'
+  pod 'CCRegionSelector', :path => '../', :testspecs => ['Tests']
 
-  target 'CCRegionSelector_Tests' do
-    inherit! :search_paths
+  # target 'CCRegionSelector_Tests' do
+  #   inherit! :search_paths
 
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0'
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
-    pod 'Nimble-Snapshots' , '~> 6.3.0'
-  end
+  #   pod 'Quick'
+  #   pod 'Nimble'
+  #   pod 'FBSnapshotTestCase'
+  #   pod 'Nimble-Snapshots'
+  # end
 end
