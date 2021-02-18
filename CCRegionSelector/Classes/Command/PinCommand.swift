@@ -18,7 +18,7 @@ class PinCommand: DataManipulateCommand {
         // TODO: better algro
         for param in self.params.reversed() {
             guard let element = diallingCodeList.findByCountryCode(param),
-                let elementIndex = diallingCodeList.firstIndex(of: element) else { return }
+                let elementIndex = diallingCodeList.firstIndex(of: element) else { continue }
 
             let list = diallingCodeList.rearrange(fromIndex: elementIndex, toIndex: 0)
             diallingCodeList = list
