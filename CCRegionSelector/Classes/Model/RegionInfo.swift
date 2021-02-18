@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct RegionInfo: Codable, Equatable {
-    let name: String
-    let countryCode: String
-    let dialCode: String
+public struct RegionInfo: Codable, Equatable {
+    public let name: String
+    public let countryCode: String
+    public let dialCode: String
 
     enum CodingKeys: String, CodingKey {
         case countryCode = "code"
