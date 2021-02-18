@@ -26,6 +26,7 @@
 		C35F4DEF6B797EB2EE3CEA464B106D1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9BECB57F88B4AE125F2CCDAD637DAC /* Foundation.framework */; };
 		D26E759092E75D38C47D4EB1B92ACED5 /* CCRegionSelector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D715320352FA7A60DD5A8BFC46E1570F /* CCRegionSelector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2C99AE4D669D7F8718D0D2C14F3A153 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9BECB57F88B4AE125F2CCDAD637DAC /* Foundation.framework */; };
+		DCBCE73425DED70100597214 /* RestrictCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBCE73325DED70100597214 /* RestrictCommand.swift */; };
 		DDEECDA10EC4FB4755C63C1806528D57 /* RegionSelectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F60FD6274992E1D39E4DEFBA06152 /* RegionSelectorManager.swift */; };
 		F0C50A40C01F62AFB33259FD2520F055 /* Pods-CCRegionSelector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB4D1A1FECA21643A1C9D39F4F42352 /* Pods-CCRegionSelector_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -58,31 +59,32 @@
 		2B161388B8512E41F91CFBA40A05F34F /* DefaultRegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRegionDataLoader.swift; sourceTree = "<group>"; };
 		2E919C4D16C828C4DA0D758D10F0EFC6 /* DefaulCountryPickView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaulCountryPickView.swift; path = CCRegionSelector/Classes/DefaulCountryPickView.swift; sourceTree = "<group>"; };
 		40355E50D653FA90CB281A4C564AE97F /* CCRegionSelector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CCRegionSelector.modulemap; sourceTree = "<group>"; };
-		468679FB001A098F152D034CB87CD159 /* CCRegionSelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CCRegionSelector.framework; path = CCRegionSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		495D20EA0AD661E9F770AC881D0EC086 /* diallingcode.json */ = {isa = PBXFileReference; includeInIndex = 1; name = diallingcode.json; path = CCRegionSelector/Assets/diallingcode.json; sourceTree = "<group>"; };
+		468679FB001A098F152D034CB87CD159 /* CCRegionSelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCRegionSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		495D20EA0AD661E9F770AC881D0EC086 /* diallingcode.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = diallingcode.json; path = CCRegionSelector/Assets/diallingcode.json; sourceTree = "<group>"; };
 		4CD3ECE7D7447C1F1A37F6FB7E1DEB4F /* RegionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionInfo.swift; sourceTree = "<group>"; };
 		53EED85B00B16C539166624BACFCDCC6 /* CCRegionSelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCRegionSelector.release.xcconfig; sourceTree = "<group>"; };
 		63B8D2B8CEAECB64764D73A497B51EB0 /* Pods-CCRegionSelector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CCRegionSelector_Example.modulemap"; sourceTree = "<group>"; };
 		727012037398EAF540FB8006334166A9 /* CCRegionSelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCRegionSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7318EBBD846D1FA6376C64A17537BEB6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7318EBBD846D1FA6376C64A17537BEB6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		738DB6D0B21447335B2C2D579FFF9C93 /* Pods-CCRegionSelector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCRegionSelector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7600CE7A6339B7C465F2884DB99EFA66 /* CCRegionSelector.unit-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CCRegionSelector.unit-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		772B2B0461B9875A9757B523D595D172 /* Pods-CCRegionSelector_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCRegionSelector_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		79459799B16AB096654004F1917CD38E /* RegionSelectorManagerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorManagerTests.swift; path = CCRegionSelector/Tests/RegionSelectorManagerTests.swift; sourceTree = "<group>"; };
-		7C891C9E4CDBE8DDE449AD9BC75BB3FB /* CCRegionSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CCRegionSelector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7C891C9E4CDBE8DDE449AD9BC75BB3FB /* CCRegionSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CCRegionSelector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7FA50B0F6C05E43C6B0B17007DBA2789 /* Pods-CCRegionSelector_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CCRegionSelector_Example-umbrella.h"; sourceTree = "<group>"; };
 		8AC35D2FF529BD171E2AA6DE53210F0C /* Pods-CCRegionSelector_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CCRegionSelector_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8FF1B05B4A5519B4CA8ACB11A2D3AE14 /* CCRegionSelector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCRegionSelector.debug.xcconfig; sourceTree = "<group>"; };
-		90365924BA98BFBD3E4675715CD7A73B /* Pods_CCRegionSelector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CCRegionSelector_Example.framework; path = "Pods-CCRegionSelector_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90365924BA98BFBD3E4675715CD7A73B /* Pods_CCRegionSelector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCRegionSelector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEED295DE582E60B5CD657A202691C4 /* DataManipulateCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataManipulateCommand.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4BE43803882A1646111F88072198CA2 /* Pods-CCRegionSelector_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCRegionSelector_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AC0974F89A06D9271FD60FE9D0050EF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AC0974F89A06D9271FD60FE9D0050EF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B64100AD2BB3B76D516BA3A8A55AF8C8 /* CCRegionSelector-Unit-Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CCRegionSelector-Unit-Tests"; path = "CCRegionSelector-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4DCAF94F6E41B4CB511E483BCA791C /* CCRegionSelector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CCRegionSelector-Info.plist"; sourceTree = "<group>"; };
 		D10D04DD4B8EC733FE7747CA80FA13BF /* Array+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Helper.swift"; sourceTree = "<group>"; };
 		D715320352FA7A60DD5A8BFC46E1570F /* CCRegionSelector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCRegionSelector-umbrella.h"; sourceTree = "<group>"; };
 		D97901564C2159A3805561E55F51DA3C /* CCRegionSelector.unit-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CCRegionSelector.unit-tests.release.xcconfig"; sourceTree = "<group>"; };
+		DCBCE73325DED70100597214 /* RestrictCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictCommand.swift; sourceTree = "<group>"; };
 		EAB4D1A1FECA21643A1C9D39F4F42352 /* Pods-CCRegionSelector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCRegionSelector_Example-dummy.m"; sourceTree = "<group>"; };
 		EDD04FDE1A3BFD418DD7CA9E95345888 /* CCRegionSelector-Unit-Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CCRegionSelector-Unit-Tests-Info.plist"; sourceTree = "<group>"; };
 		EE9BECB57F88B4AE125F2CCDAD637DAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -184,6 +186,7 @@
 			children = (
 				9AEED295DE582E60B5CD657A202691C4 /* DataManipulateCommand.swift */,
 				13BB2F70386905FFE4304D8DC5C2F060 /* PinCommand.swift */,
+				DCBCE73325DED70100597214 /* RestrictCommand.swift */,
 			);
 			name = Command;
 			path = CCRegionSelector/Classes/Command;
@@ -494,6 +497,7 @@
 				840202CB8E81A01E09FC9C8D415D18F9 /* DefaultRegionDataLoader.swift in Sources */,
 				BD57F0D225CB059D0E70404BEBDD6A13 /* PinCommand.swift in Sources */,
 				3954DCC8C0729C3A27E56F89BB134C9E /* RegionDataLoader.swift in Sources */,
+				DCBCE73425DED70100597214 /* RestrictCommand.swift in Sources */,
 				A20FE4FB5569D480493FB5E801E8089C /* RegionInfo.swift in Sources */,
 				DDEECDA10EC4FB4755C63C1806528D57 /* RegionSelectorManager.swift in Sources */,
 				64AF57A992B5853228C153FCF408CBB9 /* RegionSelectorView.swift in Sources */,
@@ -728,8 +732,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

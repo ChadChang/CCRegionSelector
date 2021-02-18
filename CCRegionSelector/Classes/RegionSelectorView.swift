@@ -99,12 +99,16 @@ public class RegionSelectorView: UIView {
     }
 
     public func setDefaultRegion(_ code: CountryCode) {
-        let indexToSelect = regionInfoList.index(where: { $0.countryCode == code})
+        let indexToSelect = regionInfoList.firstIndex(where: { $0.countryCode == code})
         if let indexToSelect = indexToSelect {
             pickerView.selectRow(indexToSelect, inComponent: 0, animated: true)
-
             updateData()
         }
+    }
+
+    public func setRestrictRegions(_ restrictList:[CountryCode]) {
+        regionSelectorManager?.execute(command: RestrictCommand(params: restrictList))
+        self.pickerView.reloadAllComponents()
     }
 
     // MARK: - Private Methods
