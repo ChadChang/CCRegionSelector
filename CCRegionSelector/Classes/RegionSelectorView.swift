@@ -94,8 +94,8 @@ public class RegionSelectorView: UIView {
 
     // MARK: - Public Methods
     public func setPinCountry(code: [CountryCode]) {
-//        regionSelectorManager?.execute(command: PinCommand(params: code))
-//        self.pickerView.reloadAllComponents()
+        regionSelectorManager?.execute(command: PinCommand(params: code))
+        self.pickerView.reloadAllComponents()
     }
 
     // MARK: - Private Methods
