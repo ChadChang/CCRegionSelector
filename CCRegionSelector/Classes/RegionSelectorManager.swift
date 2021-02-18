@@ -22,7 +22,7 @@ class RegionSelectorManager {
     private(set) var dataManipulateCommands: [DataManipulateCommand] = []
     private let dataLoader: RegionDataLoader
 
-    init(dataLoader: RegionDataLoader) {
+    init(dataLoader: RegionDataLoader = DefaultRegionDataLoader()) {
         self.dataLoader = dataLoader
     }
 
