@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         selectView.delegate = self
         selectView.setPinCountry(code: ["TW", "HK"])
+        selectView.setDefaultRegion("HK")
         ////  selectView.setRestrictCountryList(["TW","US","CA"])
-        //    selectView.setDefaultCountry("HK")
         //    selectView.setFrequentCountryList(["HK", "US"])
     }
 }
