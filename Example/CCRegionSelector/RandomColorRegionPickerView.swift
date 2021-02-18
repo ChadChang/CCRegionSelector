@@ -1,6 +1,6 @@
 //
-//  CustomCountryPickerView.swift
-//  CCCountrySelector
+//  RandomColorRegionPickerView.swift
+//  CCRegionSelector
 //
 //  Created by Chad on 2020/09/15.
 //  Copyright © 2021 CocoaPods. All rights reserved.
@@ -9,9 +9,9 @@
 import UIKit
 import CCRegionSelector
 
-class RandomColorCountryPickerView: UIView {
+class RandomColorRegionPickerView: UIView {
     private let regionInfo: RegionInfo
-    private let countryNameLabel = UILabel()
+    private let regionNameLabel = UILabel()
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("should init with regionInfo")
@@ -25,14 +25,14 @@ class RandomColorCountryPickerView: UIView {
 
     // MARK: - Private Methods
     private func commomInit() {
-        countryNameLabel.font = .boldSystemFont(ofSize: 20)
-        countryNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        countryNameLabel.text = regionInfo.name
-        countryNameLabel.textColor = .random
-        addSubview(countryNameLabel)
+        regionNameLabel.font = .boldSystemFont(ofSize: 20)
+        regionNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        regionNameLabel.text = regionInfo.name
+        regionNameLabel.textColor = .random
+        addSubview(regionNameLabel)
 
-        countryNameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        countryNameLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        regionNameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        regionNameLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     }
 }
 // MARK: - UIColor Helper

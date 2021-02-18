@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BD6AC2D0CC3290D308FF87F1A7E8DA3 /* CCRegionSelector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C6D5294E698C32A2027250E048B6EF /* CCRegionSelector-dummy.m */; };
-		2BB552A6B1B1C9BE35AD7377F0BB8860 /* DefaulCountryPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E919C4D16C828C4DA0D758D10F0EFC6 /* DefaulCountryPickView.swift */; };
+		2BB552A6B1B1C9BE35AD7377F0BB8860 /* DefaulRegionPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E919C4D16C828C4DA0D758D10F0EFC6 /* DefaulRegionPickView.swift */; };
 		3713F9A9B1FFB585B069A4080BB2F314 /* Array+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D04DD4B8EC733FE7747CA80FA13BF /* Array+Helper.swift */; };
 		3954DCC8C0729C3A27E56F89BB134C9E /* RegionDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E55A09DB227C2297F0788CFFF8B3C /* RegionDataLoader.swift */; };
 		5799674DCED7AF827FAAE88F03115656 /* DataManipulateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEED295DE582E60B5CD657A202691C4 /* DataManipulateCommand.swift */; };
@@ -57,7 +57,7 @@
 		24820F644F32B4B59B15B2C99E9A4A3F /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+MemoryLeakTracking.swift"; path = "CCRegionSelector/Tests/XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		2A20DDCD3BCFE9EB26EFA1975EA26127 /* CCRegionSelector-Unit-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CCRegionSelector-Unit-Tests-frameworks.sh"; sourceTree = "<group>"; };
 		2B161388B8512E41F91CFBA40A05F34F /* DefaultRegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRegionDataLoader.swift; sourceTree = "<group>"; };
-		2E919C4D16C828C4DA0D758D10F0EFC6 /* DefaulCountryPickView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaulCountryPickView.swift; path = CCRegionSelector/Classes/DefaulCountryPickView.swift; sourceTree = "<group>"; };
+		2E919C4D16C828C4DA0D758D10F0EFC6 /* DefaulRegionPickView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaulRegionPickView.swift; path = CCRegionSelector/Classes/DefaulRegionPickView.swift; sourceTree = "<group>"; };
 		40355E50D653FA90CB281A4C564AE97F /* CCRegionSelector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CCRegionSelector.modulemap; sourceTree = "<group>"; };
 		468679FB001A098F152D034CB87CD159 /* CCRegionSelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCRegionSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		495D20EA0AD661E9F770AC881D0EC086 /* diallingcode.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = diallingcode.json; path = CCRegionSelector/Assets/diallingcode.json; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 		F642D24A683A689C8E8A043178D34E04 /* CCRegionSelector */ = {
 			isa = PBXGroup;
 			children = (
-				2E919C4D16C828C4DA0D758D10F0EFC6 /* DefaulCountryPickView.swift */,
+				2E919C4D16C828C4DA0D758D10F0EFC6 /* DefaulRegionPickView.swift */,
 				495D20EA0AD661E9F770AC881D0EC086 /* diallingcode.json */,
 				FB6F60FD6274992E1D39E4DEFBA06152 /* RegionSelectorManager.swift */,
 				0C5F5BA90178FD407CB2013FD699D2C4 /* RegionSelectorView.swift */,
@@ -493,7 +493,7 @@
 				3713F9A9B1FFB585B069A4080BB2F314 /* Array+Helper.swift in Sources */,
 				1BD6AC2D0CC3290D308FF87F1A7E8DA3 /* CCRegionSelector-dummy.m in Sources */,
 				5799674DCED7AF827FAAE88F03115656 /* DataManipulateCommand.swift in Sources */,
-				2BB552A6B1B1C9BE35AD7377F0BB8860 /* DefaulCountryPickView.swift in Sources */,
+				2BB552A6B1B1C9BE35AD7377F0BB8860 /* DefaulRegionPickView.swift in Sources */,
 				840202CB8E81A01E09FC9C8D415D18F9 /* DefaultRegionDataLoader.swift in Sources */,
 				BD57F0D225CB059D0E70404BEBDD6A13 /* PinCommand.swift in Sources */,
 				3954DCC8C0729C3A27E56F89BB134C9E /* RegionDataLoader.swift in Sources */,

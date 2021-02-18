@@ -167,7 +167,7 @@ extension RegionSelectorView: UIPickerViewDelegate {
         if let customPickerView = self.delegate?.customPickerView(regionInfo) {
             return customPickerView
         }
-        return DefaulCountryPickView(regionInfo: regionInfo)
+        return DefaulRegionPickView(regionInfo: regionInfo)
     }
 
     public func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {

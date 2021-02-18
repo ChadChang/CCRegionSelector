@@ -1,15 +1,15 @@
 //
-//  CustomCountryPickView.swift
-//  CustomCountryPickView
+//  DefaulRegionPickView.swift
+//  CCRegionSelector
 //
 //  Created by Chad on 10/16/15.
 //  Copyright © 2015 Chad. All rights reserved.
 //
 import UIKit
 
-class DefaulCountryPickView: UIView {
+class DefaulRegionPickView: UIView {
     private let regionInfo: RegionInfo
-    private let countryNameLabel: UILabel = UILabel()
+    private let regionNameLabel: UILabel = UILabel()
     private let phoneCodeLabel: UILabel = UILabel()
 
     // MARK: - View LifeCycle
@@ -25,19 +25,19 @@ class DefaulCountryPickView: UIView {
 
     // MARK: - Private Methods
     private func commomInit() {
-        countryNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        countryNameLabel.text = regionInfo.name
-        addSubview(countryNameLabel)
+        regionNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        regionNameLabel.text = regionInfo.name
+        addSubview(regionNameLabel)
 
-        countryNameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        countryNameLabel.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
+        regionNameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        regionNameLabel.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
 
         phoneCodeLabel.translatesAutoresizingMaskIntoConstraints = false
         phoneCodeLabel.text = regionInfo.dialCode
         addSubview(phoneCodeLabel)
 
         phoneCodeLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        phoneCodeLabel.leadingAnchor.constraint(equalTo: countryNameLabel.trailingAnchor, constant: 10).isActive = true
+        phoneCodeLabel.leadingAnchor.constraint(equalTo: regionNameLabel.trailingAnchor, constant: 10).isActive = true
         phoneCodeLabel.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -15).isActive = true
     }
 }

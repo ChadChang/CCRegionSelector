@@ -12,7 +12,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		DCBCE6DD25DEC1B600597214 /* RandomColorCountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBCE6DC25DEC1B600597214 /* RandomColorCountryPickerView.swift */; };
+		DCBCE6DD25DEC1B600597214 /* RandomColorRegionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBCE6DC25DEC1B600597214 /* RandomColorRegionPickerView.swift */; };
 		E64F92B0CE6F1773373122C1 /* Pods_CCRegionSelector_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D203F3DFD7AD5E61A3016505 /* Pods_CCRegionSelector_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		B240E238DEE6D0AFD4C50577 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C4305A5037E972231704A7E6 /* Pods-CCRegionSelector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCRegionSelector_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CCRegionSelector_Tests/Pods-CCRegionSelector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D203F3DFD7AD5E61A3016505 /* Pods_CCRegionSelector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCRegionSelector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCBCE6DC25DEC1B600597214 /* RandomColorCountryPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorCountryPickerView.swift; sourceTree = "<group>"; };
+		DCBCE6DC25DEC1B600597214 /* RandomColorRegionPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorRegionPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				DCBCE6DC25DEC1B600597214 /* RandomColorCountryPickerView.swift */,
+				DCBCE6DC25DEC1B600597214 /* RandomColorRegionPickerView.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBCE6DD25DEC1B600597214 /* RandomColorCountryPickerView.swift in Sources */,
+				DCBCE6DD25DEC1B600597214 /* RandomColorRegionPickerView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
