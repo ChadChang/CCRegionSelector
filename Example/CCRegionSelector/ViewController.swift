@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         selectView.delegate = self
-        selectView.setPinRegion(code: ["TW", "HK"])
+        selectView.setPinRegions(["TW", "HK"])
         selectView.setDefaultRegion("HK")
         selectView.setRestrictRegions(["TW","US","CA"])
     }
