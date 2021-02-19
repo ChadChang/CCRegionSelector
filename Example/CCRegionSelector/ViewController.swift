@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         selectView.delegate = self
-        selectView.setPinRegions(["TW", "HK"])
+        selectView.setPinRegions(["TW", "US"])
 //        selectView.setDefaultRegion("HK")
 //        selectView.setRestrictRegions(["TW","US","CA"])
     }
@@ -39,8 +39,8 @@ extension ViewController: RegionSelectorViewDelegate {
 
     func customPickerView(_ info: RegionInfo) -> UIView? {
         // return nil if use default picker view
-        nil
+//        nil
         // use custom picker view
-//         RandomColorRegionPickerView(regionInfo: info)
+         RandomColorRegionPickerView(regionInfo: info)
     }
 }
