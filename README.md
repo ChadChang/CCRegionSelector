@@ -1,6 +1,6 @@
 # CCRegionSelector
 
-[![CI Status](https://img.shields.io/travis/ChadChang/CCRegionSelector.svg?style=flat)](https://travis-ci.org/ChadChang/CCRegionSelector)
+[![CI-iOS](https://github.com/ChadChang/CCRegionSelector/actions/workflows/CI-iOS.yml/badge.svg)](https://github.com/ChadChang/CCRegionSelector/actions/workflows/CI-iOS.yml)
 [![Version](https://img.shields.io/cocoapods/v/CCRegionSelector.svg?style=flat)](https://cocoapods.org/pods/CCRegionSelector)
 [![License](https://img.shields.io/cocoapods/l/CCRegionSelector.svg?style=flat)](https://cocoapods.org/pods/CCRegionSelector)
 [![Platform](https://img.shields.io/cocoapods/p/CCRegionSelector.svg?style=flat)](https://cocoapods.org/pods/CCRegionSelector)
