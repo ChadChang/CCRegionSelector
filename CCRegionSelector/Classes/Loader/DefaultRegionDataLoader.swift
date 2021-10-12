@@ -6,22 +6,27 @@
 //
 
 import Foundation
-enum DefaultRegionDataLoaderError: Error {
-    case loadFail
+
+extension DefaultRegionDataLoader {
+    enum Error: Swift.Error {
+        case conectivity
+        case invalidData
+    }
 }
+
 class DefaultRegionDataLoader: RegionDataLoader {
     private enum Constant {
         static let diallingcodeFileName = "diallingcode"
     }
 
-    func load(completion: @escaping (Result) -> Void) {
+    func load(completion: @escaping (LoadDataResult) -> Void) {
         if let regionData = loadRegionData(),
            let regionDataList = decodeToDailingCodeList(from: regionData) {
             completion(.success(regionDataList))
             return
         }
         
-        completion(.failure(DefaultRegionDataLoaderError.loadFail))
+        completion(.failure(Error.conectivity))
     }
 
     private func loadRegionData() -> Data? {

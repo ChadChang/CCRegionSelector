@@ -13,8 +13,9 @@ class RegionSelectorManagerTests: XCTestCase {
     func test_init_withPropertiesAllEmpty() {
         let (sut, _) = makeSUT()
 
-        XCTAssertTrue(sut.regionInfoList.isEmpty)
-        XCTAssertTrue(sut.dataManipulateCommands.isEmpty)
+        XCTAssertEqual(sut.regionInfoList, [])
+        XCTAssertEqual(sut.originalRegionInfoList, [])
+        XCTAssertEqual(sut.dataManipulateCommands.count, 0)
     }
 
     func test_loader_loadedOnlyOnceWhenLoadData() {
@@ -202,10 +203,10 @@ extension RegionSelectorManager {
 class RegionDataLoaderSpy: RegionDataLoader {
     var isLoaded: Bool = false
     var error: Error?
-    typealias Message = ((Result) -> Void)
+    typealias Message = ((LoadDataResult) -> Void)
     var messages: [Message] = []
 
-    func load(completion: @escaping (Result) -> Void) {
+    func load(completion: @escaping (LoadDataResult) -> Void) {
         messages.append(completion)
     }
 
