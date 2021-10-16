@@ -9,6 +9,12 @@ import Foundation
 
 typealias RegionSelectorManagerResult = Result<[RegionInfo], Error>
 
+extension RegionSelectorManager {
+    enum Error: Swift.Error {
+        case loadDataFail
+    }
+}
+
 class RegionSelectorManager {
     enum SortType {
         case name
@@ -33,8 +39,8 @@ class RegionSelectorManager {
                 self?.originalRegionInfoList = items
                 self?.regionInfoList = items
                 completion(.success(items))
-            case let .failure(error):
-            completion(.failure(error))
+            case .failure(_):
+                completion(.failure(Error.loadDataFail))
             }
         })
     }
