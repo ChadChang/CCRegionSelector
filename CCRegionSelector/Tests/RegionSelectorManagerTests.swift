@@ -190,35 +190,6 @@ class RegionSelectorManagerTests: XCTestCase {
         trackForMemoryLeaks(loader, file: file, line: line)
         return (sut, loader)
     }
-
-    private func makeItem(name: String, countryCode: String, dialCode: String) -> RegionInfo {
-        let item = RegionInfo(name: name, countryCode: countryCode, dialCode: dialCode)
-        return item
-    }
-
-    typealias RegionInfoTuple = (TW: RegionInfo, US: RegionInfo, GR: RegionInfo)
-
-    private func makeItems() -> (list:[RegionInfo], tuple: RegionInfoTuple) {
-        let twItem = makeTWItem()
-        let usItem = makeUSItem()
-        let grItem = makeGreeceItem()
-        return (list: [twItem, usItem, grItem] , tuple:(TW: makeTWItem(), US: makeUSItem(), GR: makeGreeceItem()))
-    }
-
-    private func makeTWItem() -> RegionInfo {
-        let item = RegionInfo(name: "Taiwan", countryCode: "TW", dialCode: "+886")
-        return item
-    }
-
-    private func makeUSItem() -> RegionInfo {
-        let item = RegionInfo(name: "United States", countryCode: "US", dialCode: "+1")
-        return item
-    }
-
-    private func makeGreeceItem() -> RegionInfo {
-        let item = RegionInfo(name: "Greece", countryCode: "GR", dialCode: "+30")
-        return item
-    }
 }
 
 extension RegionSelectorManager {

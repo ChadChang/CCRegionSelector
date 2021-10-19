@@ -30,6 +30,7 @@
 		DC99DC63271E6219003EB7D4 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC60271E6219003EB7D4 /* UIView+Snapshot.swift */; };
 		DC99DC66271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */; };
 		DC99DC68271E6BF6003EB7D4 /* init_load.png in Resources */ = {isa = PBXBuildFile; fileRef = DC99DC67271E6BF6003EB7D4 /* init_load.png */; };
+		DC99DC6A271E6FB5003EB7D4 /* XCTestCase+RegionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC69271E6FB5003EB7D4 /* XCTestCase+RegionInfo.swift */; };
 		E0630103910789CE98E7E2E64049A783 /* RegionSelectorManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980C2CA2E9D04906654B44545B62ABF /* RegionSelectorManagerTests.swift */; };
 		E41B8FA3436BA47F4C9D754A01527C88 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7AA3373D9CE11237B50091B35F630 /* XCTestCase+MemoryLeakTracking.swift */; };
 		E94D92452D61A96EEC89859EDC27FFE8 /* RegionSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAF72625B4EA2C12F8A28965873538 /* RegionSelectorView.swift */; };
@@ -67,7 +68,7 @@
 		40AA6EA648D3AA5A6A2D1784DF50FB09 /* DefaulRegionPickView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaulRegionPickView.swift; path = CCRegionSelector/Classes/DefaulRegionPickView.swift; sourceTree = "<group>"; };
 		468679FB001A098F152D034CB87CD159 /* CCRegionSelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCRegionSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA9F2E908BE3690F5F1F49923AD47C1 /* CCRegionSelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCRegionSelector.release.xcconfig; sourceTree = "<group>"; };
-		5DD7AA3373D9CE11237B50091B35F630 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+MemoryLeakTracking.swift"; path = "CCRegionSelector/Tests/XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		5DD7AA3373D9CE11237B50091B35F630 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		63B8D2B8CEAECB64764D73A497B51EB0 /* Pods-CCRegionSelector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CCRegionSelector_Example.modulemap"; sourceTree = "<group>"; };
 		68B070B04D21972420177C6E4BA7EFC3 /* RegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionDataLoader.swift; sourceTree = "<group>"; };
 		727176681E940AB05AB63CBF19E960A2 /* CCRegionSelector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCRegionSelector-dummy.m"; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		DC99DC60271E6219003EB7D4 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
 		DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSelectorViewSnapshotTests.swift; sourceTree = "<group>"; };
 		DC99DC67271E6BF6003EB7D4 /* init_load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = init_load.png; sourceTree = "<group>"; };
+		DC99DC69271E6FB5003EB7D4 /* XCTestCase+RegionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+RegionInfo.swift"; sourceTree = "<group>"; };
 		DD261B0811FA4C3295916E2E5BA77B31 /* RegionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionInfo.swift; sourceTree = "<group>"; };
 		EAB4D1A1FECA21643A1C9D39F4F42352 /* Pods-CCRegionSelector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCRegionSelector_Example-dummy.m"; sourceTree = "<group>"; };
 		F00769506444B5F25C7730AF5672EC30 /* DefaultRegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRegionDataLoader.swift; sourceTree = "<group>"; };
@@ -234,7 +236,6 @@
 				3B0E2FD463C4213DB6BA64715D9731FB /* DefaultRegionDataLoaderTests.swift */,
 				D980C2CA2E9D04906654B44545B62ABF /* RegionSelectorManagerTests.swift */,
 				DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */,
-				5DD7AA3373D9CE11237B50091B35F630 /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -280,8 +281,10 @@
 			isa = PBXGroup;
 			children = (
 				DC99DC5E271E6219003EB7D4 /* SnapshotWindow.swift */,
-				DC99DC5F271E6219003EB7D4 /* XCTestCase+Snapshot.swift */,
 				DC99DC60271E6219003EB7D4 /* UIView+Snapshot.swift */,
+				5DD7AA3373D9CE11237B50091B35F630 /* XCTestCase+MemoryLeakTracking.swift */,
+				DC99DC69271E6FB5003EB7D4 /* XCTestCase+RegionInfo.swift */,
+				DC99DC5F271E6219003EB7D4 /* XCTestCase+Snapshot.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC99DC6A271E6FB5003EB7D4 /* XCTestCase+RegionInfo.swift in Sources */,
 				52D81BF663C9E2576D8F414703F86E12 /* DefaultRegionDataLoaderTests.swift in Sources */,
 				DC99DC66271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift in Sources */,
 				E0630103910789CE98E7E2E64049A783 /* RegionSelectorManagerTests.swift in Sources */,
