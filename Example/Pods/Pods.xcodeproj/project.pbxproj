@@ -25,6 +25,11 @@
 		B1FFD1098CD191556169EF0F93325989 /* Pods-CCRegionSelector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA50B0F6C05E43C6B0B17007DBA2789 /* Pods-CCRegionSelector_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD977BE7D210DB95EE95CB3B99B843D9 /* CCRegionSelector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 395F86B2F25C0F591FCF190F714D5AAB /* CCRegionSelector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA491F68F51F5AA62332AAB05D63C891 /* RegionDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B070B04D21972420177C6E4BA7EFC3 /* RegionDataLoader.swift */; };
+		DC99DC61271E6219003EB7D4 /* SnapshotWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC5E271E6219003EB7D4 /* SnapshotWindow.swift */; };
+		DC99DC62271E6219003EB7D4 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC5F271E6219003EB7D4 /* XCTestCase+Snapshot.swift */; };
+		DC99DC63271E6219003EB7D4 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC60271E6219003EB7D4 /* UIView+Snapshot.swift */; };
+		DC99DC66271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */; };
+		DC99DC68271E6BF6003EB7D4 /* init_load.png in Resources */ = {isa = PBXBuildFile; fileRef = DC99DC67271E6BF6003EB7D4 /* init_load.png */; };
 		E0630103910789CE98E7E2E64049A783 /* RegionSelectorManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980C2CA2E9D04906654B44545B62ABF /* RegionSelectorManagerTests.swift */; };
 		E41B8FA3436BA47F4C9D754A01527C88 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7AA3373D9CE11237B50091B35F630 /* XCTestCase+MemoryLeakTracking.swift */; };
 		E94D92452D61A96EEC89859EDC27FFE8 /* RegionSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAF72625B4EA2C12F8A28965873538 /* RegionSelectorView.swift */; };
@@ -85,6 +90,11 @@
 		CA9701EB2CEFB1646C2D6674D5060923 /* CCRegionSelector.unit-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CCRegionSelector.unit-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7250D42C80A0032D87C5DAE0C804410 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D980C2CA2E9D04906654B44545B62ABF /* RegionSelectorManagerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorManagerTests.swift; path = CCRegionSelector/Tests/RegionSelectorManagerTests.swift; sourceTree = "<group>"; };
+		DC99DC5E271E6219003EB7D4 /* SnapshotWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotWindow.swift; sourceTree = "<group>"; };
+		DC99DC5F271E6219003EB7D4 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
+		DC99DC60271E6219003EB7D4 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSelectorViewSnapshotTests.swift; sourceTree = "<group>"; };
+		DC99DC67271E6BF6003EB7D4 /* init_load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = init_load.png; sourceTree = "<group>"; };
 		DD261B0811FA4C3295916E2E5BA77B31 /* RegionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionInfo.swift; sourceTree = "<group>"; };
 		EAB4D1A1FECA21643A1C9D39F4F42352 /* Pods-CCRegionSelector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCRegionSelector_Example-dummy.m"; sourceTree = "<group>"; };
 		F00769506444B5F25C7730AF5672EC30 /* DefaultRegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRegionDataLoader.swift; sourceTree = "<group>"; };
@@ -219,8 +229,11 @@
 		B7C80E462132C8C5FC211E23354EFB26 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				DC99DC5D271E6219003EB7D4 /* Helpers */,
+				DC99DC64271E622D003EB7D4 /* Snapshots */,
 				3B0E2FD463C4213DB6BA64715D9731FB /* DefaultRegionDataLoaderTests.swift */,
 				D980C2CA2E9D04906654B44545B62ABF /* RegionSelectorManagerTests.swift */,
+				DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */,
 				5DD7AA3373D9CE11237B50091B35F630 /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			name = Tests;
@@ -261,6 +274,24 @@
 				78667E01501D160C6F337575CCB2FF49 /* Pods-CCRegionSelector_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DC99DC5D271E6219003EB7D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC99DC5E271E6219003EB7D4 /* SnapshotWindow.swift */,
+				DC99DC5F271E6219003EB7D4 /* XCTestCase+Snapshot.swift */,
+				DC99DC60271E6219003EB7D4 /* UIView+Snapshot.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DC99DC64271E622D003EB7D4 /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				DC99DC67271E6BF6003EB7D4 /* init_load.png */,
+			);
+			path = Snapshots;
 			sourceTree = "<group>";
 		};
 		EEB99010B4B78C9A5B0A2635A4D266A2 /* CCRegionSelector */ = {
@@ -412,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC99DC68271E6BF6003EB7D4 /* init_load.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,8 +501,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D81BF663C9E2576D8F414703F86E12 /* DefaultRegionDataLoaderTests.swift in Sources */,
+				DC99DC66271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift in Sources */,
 				E0630103910789CE98E7E2E64049A783 /* RegionSelectorManagerTests.swift in Sources */,
+				DC99DC63271E6219003EB7D4 /* UIView+Snapshot.swift in Sources */,
+				DC99DC62271E6219003EB7D4 /* XCTestCase+Snapshot.swift in Sources */,
 				E41B8FA3436BA47F4C9D754A01527C88 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				DC99DC61271E6219003EB7D4 /* SnapshotWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
