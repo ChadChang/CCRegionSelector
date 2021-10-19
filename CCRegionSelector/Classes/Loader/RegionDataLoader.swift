@@ -7,6 +7,8 @@
 
 import Foundation
 
-protocol RegionDataLoader {
-    func load(completion: @escaping (Result) -> Void)
+public typealias LoadDataResult = Result<[RegionInfo], Error>
+
+public protocol RegionDataLoader {
+    func load(completion: @escaping (LoadDataResult) -> Void)
 }

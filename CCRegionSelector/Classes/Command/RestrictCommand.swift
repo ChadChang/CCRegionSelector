@@ -15,7 +15,7 @@ class RestrictCommand: DataManipulateCommand {
     }
 
     func execute(diallingCodeList: inout [RegionInfo]) {
-        diallingCodeList = diallingCodeList.filter{ params.contains($0.countryCode)
+        diallingCodeList = diallingCodeList.filter { params.contains($0.countryCode)
         }
     }
 }

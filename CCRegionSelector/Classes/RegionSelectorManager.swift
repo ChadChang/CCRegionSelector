@@ -7,7 +7,13 @@
 
 import Foundation
 
-typealias Result = Swift.Result<[RegionInfo], Error>
+typealias RegionSelectorManagerResult = Result<[RegionInfo], Error>
+
+extension RegionSelectorManager {
+    enum Error: Swift.Error {
+        case loadDataFail
+    }
+}
 
 class RegionSelectorManager {
     enum SortType {
@@ -26,7 +32,7 @@ class RegionSelectorManager {
         self.dataLoader = dataLoader
     }
 
-    func loadData(completion: @escaping (Result) -> Void) {
+    func loadData(completion: @escaping (RegionSelectorManagerResult) -> Void) {
         self.dataLoader.load(completion: { [weak self] result in
             switch result {
             case let .success(items):
@@ -34,7 +40,7 @@ class RegionSelectorManager {
                 self?.regionInfoList = items
                 completion(.success(items))
             case .failure(_):
-                completion(result)
+                completion(.failure(Error.loadDataFail))
             }
         })
     }
