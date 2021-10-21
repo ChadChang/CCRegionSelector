@@ -55,10 +55,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "CCRegionSelector_Tests.xctest"
-               BlueprintName = "CCRegionSelector_Tests"
-               ReferencedContainer = "container:CCRegionSelector.xcodeproj">
+               BlueprintIdentifier = "A7A65F9559F918D7A1827BE1D881FBB8"
+               BuildableName = "CCRegionSelector-Unit-Tests.xctest"
+               BlueprintName = "CCRegionSelector-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
