@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CCRegionSelector'
-  s.version          = '1.0'
+  s.version          = '1.1.0'
   s.summary          = 'A custom view to select a region'
   s.swift_version    = '5.0'
 # This description is used to generate tags and improve search results.
