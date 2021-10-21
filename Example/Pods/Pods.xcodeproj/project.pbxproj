@@ -31,6 +31,8 @@
 		DC99DC66271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */; };
 		DC99DC68271E6BF6003EB7D4 /* init_load.png in Resources */ = {isa = PBXBuildFile; fileRef = DC99DC67271E6BF6003EB7D4 /* init_load.png */; };
 		DC99DC6A271E6FB5003EB7D4 /* XCTestCase+RegionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC69271E6FB5003EB7D4 /* XCTestCase+RegionInfo.swift */; };
+		DC99DC74271F1868003EB7D4 /* DefaulRegionPickViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC99DC72271F1864003EB7D4 /* DefaulRegionPickViewSnapshotTests.swift */; };
+		DC99DC76271F1E44003EB7D4 /* defaulRegionPickView_tw_regionInfo_load.png in Resources */ = {isa = PBXBuildFile; fileRef = DC99DC75271F1E44003EB7D4 /* defaulRegionPickView_tw_regionInfo_load.png */; };
 		E0630103910789CE98E7E2E64049A783 /* RegionSelectorManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980C2CA2E9D04906654B44545B62ABF /* RegionSelectorManagerTests.swift */; };
 		E41B8FA3436BA47F4C9D754A01527C88 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7AA3373D9CE11237B50091B35F630 /* XCTestCase+MemoryLeakTracking.swift */; };
 		E94D92452D61A96EEC89859EDC27FFE8 /* RegionSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAF72625B4EA2C12F8A28965873538 /* RegionSelectorView.swift */; };
@@ -97,6 +99,8 @@
 		DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSelectorViewSnapshotTests.swift; sourceTree = "<group>"; };
 		DC99DC67271E6BF6003EB7D4 /* init_load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = init_load.png; sourceTree = "<group>"; };
 		DC99DC69271E6FB5003EB7D4 /* XCTestCase+RegionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+RegionInfo.swift"; sourceTree = "<group>"; };
+		DC99DC72271F1864003EB7D4 /* DefaulRegionPickViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaulRegionPickViewSnapshotTests.swift; sourceTree = "<group>"; };
+		DC99DC75271F1E44003EB7D4 /* defaulRegionPickView_tw_regionInfo_load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaulRegionPickView_tw_regionInfo_load.png; sourceTree = "<group>"; };
 		DD261B0811FA4C3295916E2E5BA77B31 /* RegionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionInfo.swift; sourceTree = "<group>"; };
 		EAB4D1A1FECA21643A1C9D39F4F42352 /* Pods-CCRegionSelector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCRegionSelector_Example-dummy.m"; sourceTree = "<group>"; };
 		F00769506444B5F25C7730AF5672EC30 /* DefaultRegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRegionDataLoader.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 				DC99DC5D271E6219003EB7D4 /* Helpers */,
 				DC99DC64271E622D003EB7D4 /* Snapshots */,
 				3B0E2FD463C4213DB6BA64715D9731FB /* DefaultRegionDataLoaderTests.swift */,
+				DC99DC72271F1864003EB7D4 /* DefaulRegionPickViewSnapshotTests.swift */,
 				D980C2CA2E9D04906654B44545B62ABF /* RegionSelectorManagerTests.swift */,
 				DC99DC65271E6727003EB7D4 /* RegionSelectorViewSnapshotTests.swift */,
 			);
@@ -293,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				DC99DC67271E6BF6003EB7D4 /* init_load.png */,
+				DC99DC75271F1E44003EB7D4 /* defaulRegionPickView_tw_regionInfo_load.png */,
 			);
 			path = Snapshots;
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				943F7D6A18E9D45D5B86B2DC7D084420 /* diallingcode.json in Resources */,
+				DC99DC76271F1E44003EB7D4 /* defaulRegionPickView_tw_regionInfo_load.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +516,7 @@
 				E0630103910789CE98E7E2E64049A783 /* RegionSelectorManagerTests.swift in Sources */,
 				DC99DC63271E6219003EB7D4 /* UIView+Snapshot.swift in Sources */,
 				DC99DC62271E6219003EB7D4 /* XCTestCase+Snapshot.swift in Sources */,
+				DC99DC74271F1868003EB7D4 /* DefaulRegionPickViewSnapshotTests.swift in Sources */,
 				E41B8FA3436BA47F4C9D754A01527C88 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				DC99DC61271E6219003EB7D4 /* SnapshotWindow.swift in Sources */,
 			);
