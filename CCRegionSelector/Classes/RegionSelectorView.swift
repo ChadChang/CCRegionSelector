@@ -36,12 +36,13 @@ public class RegionSelectorView: UIView {
         return toolbar
     }()
 
-    private lazy var dialCodeLabel: UILabel = {
-        let codeLabel = UILabel()
-        codeLabel.translatesAutoresizingMaskIntoConstraints = false
-        codeLabel.textAlignment = .center
-        codeLabel.font = UIFont.boldSystemFont(ofSize: 18)
-        return codeLabel
+    private lazy var dialCodeField: UITextField = {
+        let codeField = UITextField()
+        codeField.translatesAutoresizingMaskIntoConstraints = false
+        codeField.textAlignment = .center
+        codeField.font = UIFont.boldSystemFont(ofSize: 18)
+        codeField.tintColor = .clear
+        return codeField
     }()
 
     private lazy var pickerView: UIPickerView = {
@@ -49,6 +50,11 @@ public class RegionSelectorView: UIView {
         pickerView.delegate = self
         pickerView.dataSource = self
         pickerView.translatesAutoresizingMaskIntoConstraints = false
+        if #available(iOS 13, *) {
+            pickerView.backgroundColor = .systemBackground
+        } else {
+            pickerView.backgroundColor = .white
+        }
         return pickerView
     }()
 
@@ -73,13 +79,13 @@ public class RegionSelectorView: UIView {
         self.isUserInteractionEnabled = true
         self.translatesAutoresizingMaskIntoConstraints = false
 
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showPicker))
-        self.addGestureRecognizer(tapGesture)
+        self.addSubview(self.dialCodeField)
 
-        self.addSubview(self.dialCodeLabel)
-
-        dialCodeLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        dialCodeLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        dialCodeField.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        dialCodeField.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        dialCodeField.inputView = pickerView
+        dialCodeField.inputAccessoryView = toolbar
+        dialCodeField.delegate = self
 
         regionSelectorManager?.loadData(completion: { [weak self] result in
             switch result {
@@ -112,30 +118,9 @@ public class RegionSelectorView: UIView {
     }
 
     // MARK: - Private Methods
-    @objc func showPicker() {
-        guard let delegate = delegate else {
-            fatalError("should set RegionSelectorViewDelegate")
-        }
-        
-        let dismissTapGesture = UITapGestureRecognizer(target: self, action: #selector(doneAction))
-        let container = delegate.showPickInView()
-
-
-        container.addGestureRecognizer(dismissTapGesture)
-        container.addSubview(pickerView)
-        delegate.layoutPickView(pickerView)
-        container.addSubview(toolbar)
-
-        toolbar.widthAnchor.constraint(equalTo: container.widthAnchor).isActive = true
-
-        toolbar.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
-
-        pickerView.topAnchor.constraint(equalTo: toolbar.bottomAnchor).isActive = true
-    }
-
     private func updateSelectView(row selectRow: Int) {
         let diallingCode = regionInfoList[selectRow]
-        self.dialCodeLabel.text =  diallingCode.dialCode
+        self.dialCodeField.text =  diallingCode.dialCode
     }
 
     private func updateData() {
@@ -155,7 +140,7 @@ public class RegionSelectorView: UIView {
 
     @objc func doneAction() {
         updateData()
-        hidePicker()
+        dialCodeField.resignFirstResponder()
     }
 }
 
@@ -183,5 +168,16 @@ extension RegionSelectorView: UIPickerViewDataSource {
 
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         regionInfoList.count
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension RegionSelectorView: UITextFieldDelegate {
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.becomeFirstResponder()
+    }
+
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        false
     }
 }
