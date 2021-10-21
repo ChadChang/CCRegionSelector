@@ -1,9 +1,9 @@
 # CCRegionSelector
-
-[![CI-iOS](https://github.com/ChadChang/CCRegionSelector/actions/workflows/CI-iOS.yml/badge.svg)](https://github.com/ChadChang/CCRegionSelector/actions/workflows/CI-iOS.yml)
+[![Swift Version](https://img.shields.io/badge/swift-5.0-orange.svg)]()
 [![Version](https://img.shields.io/cocoapods/v/CCRegionSelector.svg?style=flat)](https://cocoapods.org/pods/CCRegionSelector)
-[![License](https://img.shields.io/cocoapods/l/CCRegionSelector.svg?style=flat)](https://cocoapods.org/pods/CCRegionSelector)
+[![CI-iOS](https://github.com/ChadChang/CCRegionSelector/actions/workflows/CI-iOS.yml/badge.svg)](https://github.com/ChadChang/CCRegionSelector/actions/workflows/CI-iOS.yml)
 [![Platform](https://img.shields.io/cocoapods/p/CCRegionSelector.svg?style=flat)](https://cocoapods.org/pods/CCRegionSelector)
+[![License](https://img.shields.io/github/license/ChadChang/CCRegionSelector)](https://cocoapods.org/pods/CCRegionSelector)
 
 | Default | Custom Picker|
 |---|---|
