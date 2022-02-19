@@ -7,42 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		083BDD69D7463B49AC3A7553FEB1A4CF /* DefaultRegionDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650ADB4C62EE1ADBC38F40D8A3B1FFA1 /* DefaultRegionDataLoaderTests.swift */; };
-		0E501AA509BF31EEAA2AE761255FA641 /* RegionSelectorManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57853DFE4C62ABF4B8745B99EC261AA3 /* RegionSelectorManagerTests.swift */; };
-		18589F25094F179FDDA8F4849CE3365A /* DataManipulateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961D8D9ABAD87FA30D2D7598D22F21C /* DataManipulateCommand.swift */; };
-		2D1B8F58A0FFA0022444D1732A6CCD39 /* Array+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC3572F059792B12F199BA80D64FD7 /* Array+Helper.swift */; };
-		42454A50B5993AC64FF5E0D392709254 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473320A799E3C802EB22FBA6CCE51D8 /* XCTestCase+Snapshot.swift */; };
-		438BD284446AC2E4DE457EFCD0458ED5 /* PinCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE2F33962668A2E4E8CE7A9D73C5EB /* PinCommand.swift */; };
-		50AEE4EC1FB646CD05D6AEA210E707A4 /* RestrictCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F4707EC261FBB6F58FE1F695A9D58 /* RestrictCommand.swift */; };
-		52CCACA015BD40CAF68FFEB9508CE078 /* RegionSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E71D7940496914A32DBE9FFE6821412 /* RegionSelectorView.swift */; };
+		0FDC3CBCAE36A17B8F5D3EA789A0F77B /* DefaulRegionPickViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4B6ABDDD58F6394D2AF58CDAD133B /* DefaulRegionPickViewSnapshotTests.swift */; };
+		18589F25094F179FDDA8F4849CE3365A /* DataManipulateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3186671D821B0D7842F5E287D8DBC39 /* DataManipulateCommand.swift */; };
+		2944873912F5C2F34982AAC0CE0269FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2D1B8F58A0FFA0022444D1732A6CCD39 /* Array+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F95EC440229660E8D971F61BC069D15 /* Array+Helper.swift */; };
+		40969E3D5D7896049F1F967AA837618E /* DefaultRegionDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DFA05D75618519E88FE1A40A7FD1CC /* DefaultRegionDataLoaderTests.swift */; };
+		438BD284446AC2E4DE457EFCD0458ED5 /* PinCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB001A347C7C1DC2B44D80321032FA22 /* PinCommand.swift */; };
+		4868697438013F44501C7720301D2944 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB3391FE4C30048F9DD88D3342EB25 /* XCTestCase+Snapshot.swift */; };
+		50AEE4EC1FB646CD05D6AEA210E707A4 /* RestrictCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D0A54EB36C02297689E735095E4E33 /* RestrictCommand.swift */; };
+		52CCACA015BD40CAF68FFEB9508CE078 /* RegionSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509EF50E102054D4D013E0E8DAE8CA8A /* RegionSelectorView.swift */; };
 		5577A4C257A0F4C3A0D9125758124964 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		692299C95938C0A70E55CE099E66547C /* CCRegionSelector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FF9D14E6BECFCE7AFACD34D268BC2E /* CCRegionSelector-dummy.m */; };
-		6D3A08553A5C4EAD31A9602632B6117F /* RegionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD259AE675AFBD45FA13932AB4E6696 /* RegionInfo.swift */; };
+		55BE7E3E86DCF93AC834D0D18D3736BD /* SnapshotWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFCF771079003709770782BEF55C2F8 /* SnapshotWindow.swift */; };
+		606625B07B79111A7A9B08CBD0A46480 /* defaulRegionPickView_tw_regionInfo_load.png in Sources */ = {isa = PBXBuildFile; fileRef = F41F66F1838980FF84C874EAC03626E0 /* defaulRegionPickView_tw_regionInfo_load.png */; };
+		692299C95938C0A70E55CE099E66547C /* CCRegionSelector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC99E87D691993144344A88D35C4CD3 /* CCRegionSelector-dummy.m */; };
+		6D3A08553A5C4EAD31A9602632B6117F /* RegionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBC6387008152F9BD76CEEC0707A1E /* RegionInfo.swift */; };
+		7232B11C622EC173275B084D583F47DF /* XCTestCase+RegionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A388EA2B51FD0373B0CDDFE90F80CD72 /* XCTestCase+RegionInfo.swift */; };
 		7256D00550DD8F3BBE28F44A99829688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		753B31E8C1B9A8F4385328702647CB3C /* diallingcode.json in Resources */ = {isa = PBXBuildFile; fileRef = B78127830ABB08A365E1D8230F315F28 /* diallingcode.json */; };
-		81C9C5553594C4B2BAC666A3D8439AC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		99E373E559858ED31C3D4B21B105E7D2 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED99635A8650BA81D154DDF182A16FA /* UIView+Snapshot.swift */; };
-		9B9DF1AAE50EAE28585E98D0306C324C /* DefaultRegionDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EDF2C6759C5E9E97A638E60BDE4E95 /* DefaultRegionDataLoader.swift */; };
-		AD20FD487B55BBDB794E12D4306EB8F8 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772791675D6379AFB27022AC092735E /* XCTestCase+MemoryLeakTracking.swift */; };
+		751DC43068EBFF2B68907C88C12F305A /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EA73697FF73C5F6CB409C92695886 /* UIView+Snapshot.swift */; };
+		753B31E8C1B9A8F4385328702647CB3C /* diallingcode.json in Resources */ = {isa = PBXBuildFile; fileRef = A7A5B4A73F04B5DF33C1DC82E953C27B /* diallingcode.json */; };
+		96A7A08DE26F8B3CD759AEBD8DF07E97 /* RegionSelectorManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012003352D7F310E6A33699C57DE4F7 /* RegionSelectorManagerTests.swift */; };
+		97591371002F41041B8A4F98CC9A859C /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F04E49B1113AA76EBB0CA8803DD8C /* XCTestCase+MemoryLeakTracking.swift */; };
+		9B9DF1AAE50EAE28585E98D0306C324C /* DefaultRegionDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0B590270FACD95A05027FBA8746C /* DefaultRegionDataLoader.swift */; };
 		AE9BDB4A54CC2FD73574A12ED6B75AC6 /* Pods-CCRegionSelector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB4D1A1FECA21643A1C9D39F4F42352 /* Pods-CCRegionSelector_Example-dummy.m */; };
 		B1FFD1098CD191556169EF0F93325989 /* Pods-CCRegionSelector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA50B0F6C05E43C6B0B17007DBA2789 /* Pods-CCRegionSelector_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD977BE7D210DB95EE95CB3B99B843D9 /* CCRegionSelector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9DD2266CB3D273C14C4F6323D819A7 /* CCRegionSelector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C83A9E381048724885137B19675CA382 /* RegionSelectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE57DC2DF9656A831C049D3E3408FA /* RegionSelectorManager.swift */; };
-		C99C3E67562980074450F0E62C024860 /* SnapshotWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFFA5DCF2D8EE7FCB4DE51D9CCBF76 /* SnapshotWindow.swift */; };
-		D4269FBF60CEBE90D162ADD6B7886030 /* DefaulRegionPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC915AA87BE977CE228B9BFBA6448BC /* DefaulRegionPickView.swift */; };
-		D87363AAF6D1BB82F5A1EAA19860F04C /* XCTestCase+RegionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4570B26FED5CAAE8CC13170BD5B393C /* XCTestCase+RegionInfo.swift */; };
-		DA491F68F51F5AA62332AAB05D63C891 /* RegionDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A0E332E37126193E710D2DC2B31CD /* RegionDataLoader.swift */; };
+		B7A12430F3355BFEEDA7BA7C63C33C95 /* RegionSelectorViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B05BD524875BDE717C86F416296B5 /* RegionSelectorViewSnapshotTests.swift */; };
+		BD977BE7D210DB95EE95CB3B99B843D9 /* CCRegionSelector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D07E6760E3E848575700D8283E08B100 /* CCRegionSelector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDB04A2684BC8C500AB497444C08C5BF /* init_load.png in Sources */ = {isa = PBXBuildFile; fileRef = 99E6C56850DD1BCBEFF1D65FE4B2211A /* init_load.png */; };
+		C83A9E381048724885137B19675CA382 /* RegionSelectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5D7EB70419873F31AF9ABF926D8D0A /* RegionSelectorManager.swift */; };
+		D4269FBF60CEBE90D162ADD6B7886030 /* DefaulRegionPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0C75BE1EAF9DC3FAB84B62E5002F50 /* DefaulRegionPickView.swift */; };
+		DA491F68F51F5AA62332AAB05D63C891 /* RegionDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DA13BD246404E7DE663187B4EE7FB /* RegionDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1E218E310867BC83DF047F8A43B5CA61 /* PBXContainerItemProxy */ = {
+		9195E8F760AE82347204AAA1C898FB31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD18F0DF5D760019B980E5DBB1FA07C4;
 			remoteInfo = CCRegionSelector;
 		};
-		51A09A9F7B4CBC10F02134BF68A0888C /* PBXContainerItemProxy */ = {
+		C0C90E33B2874CCEC63636424A9E09F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -52,54 +56,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00EDF2C6759C5E9E97A638E60BDE4E95 /* DefaultRegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRegionDataLoader.swift; sourceTree = "<group>"; };
-		066A0E332E37126193E710D2DC2B31CD /* RegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionDataLoader.swift; sourceTree = "<group>"; };
-		0CD259AE675AFBD45FA13932AB4E6696 /* RegionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionInfo.swift; sourceTree = "<group>"; };
-		11D813622EFF9988CC40AF220C6E4B36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		18FE2F33962668A2E4E8CE7A9D73C5EB /* PinCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PinCommand.swift; sourceTree = "<group>"; };
-		193A94E329DED1C308E9C6A845E91588 /* CCRegionSelector.unit-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CCRegionSelector.unit-tests.debug.xcconfig"; sourceTree = "<group>"; };
+		04C40C5E1F72C375780D688980219C2F /* CCRegionSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CCRegionSelector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		08FB3391FE4C30048F9DD88D3342EB25 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
+		0A5D7EB70419873F31AF9ABF926D8D0A /* RegionSelectorManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorManager.swift; path = Sources/CCRegionSelector/Classes/RegionSelectorManager.swift; sourceTree = "<group>"; };
+		0F4B05BD524875BDE717C86F416296B5 /* RegionSelectorViewSnapshotTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorViewSnapshotTests.swift; path = Tests/CCRegionSelectorTests/RegionSelectorViewSnapshotTests.swift; sourceTree = "<group>"; };
+		13AF0B590270FACD95A05027FBA8746C /* DefaultRegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRegionDataLoader.swift; sourceTree = "<group>"; };
 		1A7FADF49F7D1B89AB4695DDE6A4E6B7 /* Pods-CCRegionSelector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCRegionSelector_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2961D8D9ABAD87FA30D2D7598D22F21C /* DataManipulateCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataManipulateCommand.swift; sourceTree = "<group>"; };
-		2AC915AA87BE977CE228B9BFBA6448BC /* DefaulRegionPickView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaulRegionPickView.swift; path = Sources/CCRegionSelector/Classes/DefaulRegionPickView.swift; sourceTree = "<group>"; };
-		2BF50DA90DE10FE6C21A443670AD9AC8 /* CCRegionSelector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCRegionSelector.debug.xcconfig; sourceTree = "<group>"; };
-		3E71D7940496914A32DBE9FFE6821412 /* RegionSelectorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorView.swift; path = Sources/CCRegionSelector/Classes/RegionSelectorView.swift; sourceTree = "<group>"; };
-		3FFE57DC2DF9656A831C049D3E3408FA /* RegionSelectorManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorManager.swift; path = Sources/CCRegionSelector/Classes/RegionSelectorManager.swift; sourceTree = "<group>"; };
+		2A0EA73697FF73C5F6CB409C92695886 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		2EF940BA0ECDAACDE4B13C3E5F6F246E /* CCRegionSelector.unit-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CCRegionSelector.unit-tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F95EC440229660E8D971F61BC069D15 /* Array+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Helper.swift"; sourceTree = "<group>"; };
 		468679FB001A098F152D034CB87CD159 /* CCRegionSelector */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CCRegionSelector; path = CCRegionSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A6BB9176A9F6D18004D92AEC0CE9AA2 /* CCRegionSelector-Unit-Tests-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCRegionSelector-Unit-Tests-prefix.pch"; sourceTree = "<group>"; };
-		57853DFE4C62ABF4B8745B99EC261AA3 /* RegionSelectorManagerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorManagerTests.swift; path = Sources/CCRegionSelector/Tests/RegionSelectorManagerTests.swift; sourceTree = "<group>"; };
-		5ED75D7CFF2352FB59D88436A751D083 /* CCRegionSelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCRegionSelector.release.xcconfig; sourceTree = "<group>"; };
+		509EF50E102054D4D013E0E8DAE8CA8A /* RegionSelectorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorView.swift; path = Sources/CCRegionSelector/Classes/RegionSelectorView.swift; sourceTree = "<group>"; };
+		55EBC6387008152F9BD76CEEC0707A1E /* RegionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionInfo.swift; sourceTree = "<group>"; };
+		55F006FD055619608967D03ED7D172D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5AC99E87D691993144344A88D35C4CD3 /* CCRegionSelector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCRegionSelector-dummy.m"; sourceTree = "<group>"; };
+		5E74AB991D9FC5FC80A96B053BC14CFE /* CCRegionSelector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCRegionSelector.debug.xcconfig; sourceTree = "<group>"; };
+		5EFCF771079003709770782BEF55C2F8 /* SnapshotWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SnapshotWindow.swift; sourceTree = "<group>"; };
+		61DFA05D75618519E88FE1A40A7FD1CC /* DefaultRegionDataLoaderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultRegionDataLoaderTests.swift; path = Tests/CCRegionSelectorTests/DefaultRegionDataLoaderTests.swift; sourceTree = "<group>"; };
 		63B8D2B8CEAECB64764D73A497B51EB0 /* Pods-CCRegionSelector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CCRegionSelector_Example.modulemap"; sourceTree = "<group>"; };
-		650ADB4C62EE1ADBC38F40D8A3B1FFA1 /* DefaultRegionDataLoaderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultRegionDataLoaderTests.swift; path = Sources/CCRegionSelector/Tests/DefaultRegionDataLoaderTests.swift; sourceTree = "<group>"; };
-		66EC3572F059792B12F199BA80D64FD7 /* Array+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Helper.swift"; sourceTree = "<group>"; };
-		6772791675D6379AFB27022AC092735E /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
-		6C4E2F01CEAB8F2969AB1E717EC9D996 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		678E606086BEF6473D0D1CE0397D215E /* CCRegionSelector.unit-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CCRegionSelector.unit-tests.release.xcconfig"; sourceTree = "<group>"; };
+		6C79A24B5BDFADEB0039BF5C5D12AE47 /* CCRegionSelector-Unit-Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CCRegionSelector-Unit-Tests-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		738DB6D0B21447335B2C2D579FFF9C93 /* Pods-CCRegionSelector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCRegionSelector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		772B2B0461B9875A9757B523D595D172 /* Pods-CCRegionSelector_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCRegionSelector_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		79FF9D14E6BECFCE7AFACD34D268BC2E /* CCRegionSelector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCRegionSelector-dummy.m"; sourceTree = "<group>"; };
+		799E834908B2EAB71CD5F1F0543433FE /* CCRegionSelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCRegionSelector.release.xcconfig; sourceTree = "<group>"; };
 		7FA50B0F6C05E43C6B0B17007DBA2789 /* Pods-CCRegionSelector_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CCRegionSelector_Example-umbrella.h"; sourceTree = "<group>"; };
-		87CA66D96A8FAF2C3600A5DF754CF729 /* CCRegionSelector-Unit-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CCRegionSelector-Unit-Tests-resources.sh"; sourceTree = "<group>"; };
-		884F4707EC261FBB6F58FE1F695A9D58 /* RestrictCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestrictCommand.swift; sourceTree = "<group>"; };
+		8A7A7FB0557D835CB8560C577777A14B /* CCRegionSelector-Unit-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CCRegionSelector-Unit-Tests-resources.sh"; sourceTree = "<group>"; };
 		8AC35D2FF529BD171E2AA6DE53210F0C /* Pods-CCRegionSelector_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CCRegionSelector_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		90365924BA98BFBD3E4675715CD7A73B /* Pods-CCRegionSelector_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CCRegionSelector_Example"; path = Pods_CCRegionSelector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DEF4F77D868793CBCA3BD1224B0487 /* CCRegionSelector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CCRegionSelector.modulemap; sourceTree = "<group>"; };
+		99E6C56850DD1BCBEFF1D65FE4B2211A /* init_load.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = init_load.png; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A004969F4928AA66B48CED0681D15A34 /* CCRegionSelector-Unit-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CCRegionSelector-Unit-Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A4570B26FED5CAAE8CC13170BD5B393C /* XCTestCase+RegionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "XCTestCase+RegionInfo.swift"; sourceTree = "<group>"; };
+		A1D06AFAD4B2D1F857794454DF0608E1 /* CCRegionSelector-Unit-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CCRegionSelector-Unit-Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A388EA2B51FD0373B0CDDFE90F80CD72 /* XCTestCase+RegionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "XCTestCase+RegionInfo.swift"; sourceTree = "<group>"; };
 		A4BE43803882A1646111F88072198CA2 /* Pods-CCRegionSelector_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCRegionSelector_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A5F7CA3872A15F6971A1D7D88556F15C /* CCRegionSelector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CCRegionSelector-Info.plist"; sourceTree = "<group>"; };
-		AC9DD2266CB3D273C14C4F6323D819A7 /* CCRegionSelector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCRegionSelector-umbrella.h"; sourceTree = "<group>"; };
-		B311D52BAFBF38E62BB8FE9F833843B6 /* CCRegionSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CCRegionSelector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A708AA17B4DBD30F72A8E97E75345109 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A7A5B4A73F04B5DF33C1DC82E953C27B /* diallingcode.json */ = {isa = PBXFileReference; includeInIndex = 1; name = diallingcode.json; path = Sources/CCRegionSelector/Assets/diallingcode.json; sourceTree = "<group>"; };
+		AE4F04E49B1113AA76EBB0CA8803DD8C /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		B64100AD2BB3B76D516BA3A8A55AF8C8 /* CCRegionSelector-Unit-Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CCRegionSelector-Unit-Tests"; path = "CCRegionSelector-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B78127830ABB08A365E1D8230F315F28 /* diallingcode.json */ = {isa = PBXFileReference; includeInIndex = 1; name = diallingcode.json; path = Sources/CCRegionSelector/Assets/diallingcode.json; sourceTree = "<group>"; };
-		C5DFFA5DCF2D8EE7FCB4DE51D9CCBF76 /* SnapshotWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SnapshotWindow.swift; sourceTree = "<group>"; };
-		C9AE853F1A434BE7A957507CB5328C4C /* CCRegionSelector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CCRegionSelector.modulemap; sourceTree = "<group>"; };
-		CAA19C0B34C4406C05C15037DD741C9E /* CCRegionSelector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCRegionSelector-prefix.pch"; sourceTree = "<group>"; };
-		CB68B70A84CFAA3ECA164CB85FF48973 /* CCRegionSelector-Unit-Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CCRegionSelector-Unit-Tests-Info.plist"; sourceTree = "<group>"; };
-		CED99635A8650BA81D154DDF182A16FA /* UIView+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
-		D81B41B4229315009FBB1F9059A6D920 /* CCRegionSelector.unit-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CCRegionSelector.unit-tests.release.xcconfig"; sourceTree = "<group>"; };
-		E473320A799E3C802EB22FBA6CCE51D8 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
+		B7C4B6ABDDD58F6394D2AF58CDAD133B /* DefaulRegionPickViewSnapshotTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaulRegionPickViewSnapshotTests.swift; path = Tests/CCRegionSelectorTests/DefaulRegionPickViewSnapshotTests.swift; sourceTree = "<group>"; };
+		C3186671D821B0D7842F5E287D8DBC39 /* DataManipulateCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataManipulateCommand.swift; sourceTree = "<group>"; };
+		D012003352D7F310E6A33699C57DE4F7 /* RegionSelectorManagerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionSelectorManagerTests.swift; path = Tests/CCRegionSelectorTests/RegionSelectorManagerTests.swift; sourceTree = "<group>"; };
+		D07E6760E3E848575700D8283E08B100 /* CCRegionSelector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCRegionSelector-umbrella.h"; sourceTree = "<group>"; };
+		D12D2B56A8A229F2D53526366C51E4FA /* CCRegionSelector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCRegionSelector-prefix.pch"; sourceTree = "<group>"; };
+		D85DA13BD246404E7DE663187B4EE7FB /* RegionDataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionDataLoader.swift; sourceTree = "<group>"; };
+		DA778CFC7ED06AEB17295BE9C00E4682 /* CCRegionSelector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CCRegionSelector-Info.plist"; sourceTree = "<group>"; };
+		E53A1C21D91CC38F63D96F5A819A2318 /* CCRegionSelector-Unit-Tests-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCRegionSelector-Unit-Tests-prefix.pch"; sourceTree = "<group>"; };
+		E6D0A54EB36C02297689E735095E4E33 /* RestrictCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestrictCommand.swift; sourceTree = "<group>"; };
 		EAB4D1A1FECA21643A1C9D39F4F42352 /* Pods-CCRegionSelector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCRegionSelector_Example-dummy.m"; sourceTree = "<group>"; };
+		EB001A347C7C1DC2B44D80321032FA22 /* PinCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PinCommand.swift; sourceTree = "<group>"; };
+		EF0C75BE1EAF9DC3FAB84B62E5002F50 /* DefaulRegionPickView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaulRegionPickView.swift; path = Sources/CCRegionSelector/Classes/DefaulRegionPickView.swift; sourceTree = "<group>"; };
 		F2AB65177052C6BB534CCF8A6EB800D1 /* Pods-CCRegionSelector_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCRegionSelector_Example-Info.plist"; sourceTree = "<group>"; };
+		F41F66F1838980FF84C874EAC03626E0 /* defaulRegionPickView_tw_regionInfo_load.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = defaulRegionPickView_tw_regionInfo_load.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		886CDB3D257686EA2F20F496BB8CF47A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2944873912F5C2F34982AAC0CE0269FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC66C0463CDD76876AD05006776DAD60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,44 +135,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F916031DA4EA5253C5CFFCE6B6739EE3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81C9C5553594C4B2BAC666A3D8439AC6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08D40C6706DE1C6638A05028EC5AA80B /* Support Files */ = {
+		08431AA913D6D8FF70C867CDDCE2715C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C9AE853F1A434BE7A957507CB5328C4C /* CCRegionSelector.modulemap */,
-				79FF9D14E6BECFCE7AFACD34D268BC2E /* CCRegionSelector-dummy.m */,
-				A5F7CA3872A15F6971A1D7D88556F15C /* CCRegionSelector-Info.plist */,
-				CAA19C0B34C4406C05C15037DD741C9E /* CCRegionSelector-prefix.pch */,
-				AC9DD2266CB3D273C14C4F6323D819A7 /* CCRegionSelector-umbrella.h */,
-				A004969F4928AA66B48CED0681D15A34 /* CCRegionSelector-Unit-Tests-frameworks.sh */,
-				CB68B70A84CFAA3ECA164CB85FF48973 /* CCRegionSelector-Unit-Tests-Info.plist */,
-				4A6BB9176A9F6D18004D92AEC0CE9AA2 /* CCRegionSelector-Unit-Tests-prefix.pch */,
-				87CA66D96A8FAF2C3600A5DF754CF729 /* CCRegionSelector-Unit-Tests-resources.sh */,
-				2BF50DA90DE10FE6C21A443670AD9AC8 /* CCRegionSelector.debug.xcconfig */,
-				5ED75D7CFF2352FB59D88436A751D083 /* CCRegionSelector.release.xcconfig */,
-				193A94E329DED1C308E9C6A845E91588 /* CCRegionSelector.unit-tests.debug.xcconfig */,
-				D81B41B4229315009FBB1F9059A6D920 /* CCRegionSelector.unit-tests.release.xcconfig */,
+				5EFCF771079003709770782BEF55C2F8 /* SnapshotWindow.swift */,
+				2A0EA73697FF73C5F6CB409C92695886 /* UIView+Snapshot.swift */,
+				AE4F04E49B1113AA76EBB0CA8803DD8C /* XCTestCase+MemoryLeakTracking.swift */,
+				A388EA2B51FD0373B0CDDFE90F80CD72 /* XCTestCase+RegionInfo.swift */,
+				08FB3391FE4C30048F9DD88D3342EB25 /* XCTestCase+Snapshot.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CCRegionSelector";
+			name = Helpers;
+			path = Tests/CCRegionSelectorTests/Helpers;
+			sourceTree = "<group>";
+		};
+		0961B19086421F2B698FD3D15C92DEEE /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				F41F66F1838980FF84C874EAC03626E0 /* defaulRegionPickView_tw_regionInfo_load.png */,
+				99E6C56850DD1BCBEFF1D65FE4B2211A /* init_load.png */,
+			);
+			name = Snapshots;
+			path = Tests/CCRegionSelectorTests/Snapshots;
+			sourceTree = "<group>";
+		};
+		1FA7C01D3703C89B96FD7CF5B85A90D8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				04C40C5E1F72C375780D688980219C2F /* CCRegionSelector.podspec */,
+				55F006FD055619608967D03ED7D172D1 /* LICENSE */,
+				A708AA17B4DBD30F72A8E97E75345109 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		1FC49494B790DD6316716B3BD658CCD5 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				82C5A5D05D799D28DBC258263A230C72 /* CCRegionSelector */,
+				B044292C3A163632226C1EC700E45FEB /* CCRegionSelector */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2AC8B201BD5EB4E1C65951D0BD10C062 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55EBC6387008152F9BD76CEEC0707A1E /* RegionInfo.swift */,
+			);
+			name = Model;
+			path = Sources/CCRegionSelector/Classes/Model;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -165,27 +194,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		598C64E811C24934C676BD9CD8AA6316 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				650ADB4C62EE1ADBC38F40D8A3B1FFA1 /* DefaultRegionDataLoaderTests.swift */,
-				57853DFE4C62ABF4B8745B99EC261AA3 /* RegionSelectorManagerTests.swift */,
-				F91F30A4B117ECD9BAD0E9A7A3695B7B /* Helpers */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
-		71F05F5C41D51342231103AFB88908BD /* Command */ = {
-			isa = PBXGroup;
-			children = (
-				2961D8D9ABAD87FA30D2D7598D22F21C /* DataManipulateCommand.swift */,
-				18FE2F33962668A2E4E8CE7A9D73C5EB /* PinCommand.swift */,
-				884F4707EC261FBB6F58FE1F695A9D58 /* RestrictCommand.swift */,
-			);
-			name = Command;
-			path = Sources/CCRegionSelector/Classes/Command;
 			sourceTree = "<group>";
 		};
 		78667E01501D160C6F337575CCB2FF49 /* Pods-CCRegionSelector_Example */ = {
@@ -215,42 +223,74 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		82C5A5D05D799D28DBC258263A230C72 /* CCRegionSelector */ = {
+		86203199D91695454622B135B1C21C08 /* Command */ = {
 			isa = PBXGroup;
 			children = (
-				2AC915AA87BE977CE228B9BFBA6448BC /* DefaulRegionPickView.swift */,
-				B78127830ABB08A365E1D8230F315F28 /* diallingcode.json */,
-				3FFE57DC2DF9656A831C049D3E3408FA /* RegionSelectorManager.swift */,
-				3E71D7940496914A32DBE9FFE6821412 /* RegionSelectorView.swift */,
-				71F05F5C41D51342231103AFB88908BD /* Command */,
-				A14A7D1D3EF42D3B5FBAAD20E67C3173 /* Helper */,
-				EB03473982DAF7E9972D02756D0C4550 /* Loader */,
-				D4C4BA2CC6F9896556C583D52CDF42BC /* Model */,
-				AE803B6E37CC1DAF9A62891395F438E1 /* Pod */,
-				08D40C6706DE1C6638A05028EC5AA80B /* Support Files */,
-				598C64E811C24934C676BD9CD8AA6316 /* Tests */,
+				C3186671D821B0D7842F5E287D8DBC39 /* DataManipulateCommand.swift */,
+				EB001A347C7C1DC2B44D80321032FA22 /* PinCommand.swift */,
+				E6D0A54EB36C02297689E735095E4E33 /* RestrictCommand.swift */,
 			);
-			name = CCRegionSelector;
-			path = ../..;
+			name = Command;
+			path = Sources/CCRegionSelector/Classes/Command;
 			sourceTree = "<group>";
 		};
-		A14A7D1D3EF42D3B5FBAAD20E67C3173 /* Helper */ = {
+		91257704DAF9999E1347F799A703FF0A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				66EC3572F059792B12F199BA80D64FD7 /* Array+Helper.swift */,
+				91DEF4F77D868793CBCA3BD1224B0487 /* CCRegionSelector.modulemap */,
+				5AC99E87D691993144344A88D35C4CD3 /* CCRegionSelector-dummy.m */,
+				DA778CFC7ED06AEB17295BE9C00E4682 /* CCRegionSelector-Info.plist */,
+				D12D2B56A8A229F2D53526366C51E4FA /* CCRegionSelector-prefix.pch */,
+				D07E6760E3E848575700D8283E08B100 /* CCRegionSelector-umbrella.h */,
+				A1D06AFAD4B2D1F857794454DF0608E1 /* CCRegionSelector-Unit-Tests-frameworks.sh */,
+				6C79A24B5BDFADEB0039BF5C5D12AE47 /* CCRegionSelector-Unit-Tests-Info.plist */,
+				E53A1C21D91CC38F63D96F5A819A2318 /* CCRegionSelector-Unit-Tests-prefix.pch */,
+				8A7A7FB0557D835CB8560C577777A14B /* CCRegionSelector-Unit-Tests-resources.sh */,
+				5E74AB991D9FC5FC80A96B053BC14CFE /* CCRegionSelector.debug.xcconfig */,
+				799E834908B2EAB71CD5F1F0543433FE /* CCRegionSelector.release.xcconfig */,
+				2EF940BA0ECDAACDE4B13C3E5F6F246E /* CCRegionSelector.unit-tests.debug.xcconfig */,
+				678E606086BEF6473D0D1CE0397D215E /* CCRegionSelector.unit-tests.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CCRegionSelector";
+			sourceTree = "<group>";
+		};
+		947C4886DB79E39845512532384ECCE2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3F95EC440229660E8D971F61BC069D15 /* Array+Helper.swift */,
 			);
 			name = Helper;
 			path = Sources/CCRegionSelector/Classes/Helper;
 			sourceTree = "<group>";
 		};
-		AE803B6E37CC1DAF9A62891395F438E1 /* Pod */ = {
+		B044292C3A163632226C1EC700E45FEB /* CCRegionSelector */ = {
 			isa = PBXGroup;
 			children = (
-				B311D52BAFBF38E62BB8FE9F833843B6 /* CCRegionSelector.podspec */,
-				6C4E2F01CEAB8F2969AB1E717EC9D996 /* LICENSE */,
-				11D813622EFF9988CC40AF220C6E4B36 /* README.md */,
+				EF0C75BE1EAF9DC3FAB84B62E5002F50 /* DefaulRegionPickView.swift */,
+				A7A5B4A73F04B5DF33C1DC82E953C27B /* diallingcode.json */,
+				0A5D7EB70419873F31AF9ABF926D8D0A /* RegionSelectorManager.swift */,
+				509EF50E102054D4D013E0E8DAE8CA8A /* RegionSelectorView.swift */,
+				86203199D91695454622B135B1C21C08 /* Command */,
+				947C4886DB79E39845512532384ECCE2 /* Helper */,
+				C341113FECA3C98A27621B5E6D749257 /* Loader */,
+				2AC8B201BD5EB4E1C65951D0BD10C062 /* Model */,
+				1FA7C01D3703C89B96FD7CF5B85A90D8 /* Pod */,
+				91257704DAF9999E1347F799A703FF0A /* Support Files */,
+				D3577600CBCDF7A465516D5CB50B2A52 /* Tests */,
 			);
-			name = Pod;
+			name = CCRegionSelector;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C341113FECA3C98A27621B5E6D749257 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				13AF0B590270FACD95A05027FBA8746C /* DefaultRegionDataLoader.swift */,
+				D85DA13BD246404E7DE663187B4EE7FB /* RegionDataLoader.swift */,
+			);
+			name = Loader;
+			path = Sources/CCRegionSelector/Classes/Loader;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -280,36 +320,17 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D4C4BA2CC6F9896556C583D52CDF42BC /* Model */ = {
+		D3577600CBCDF7A465516D5CB50B2A52 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0CD259AE675AFBD45FA13932AB4E6696 /* RegionInfo.swift */,
+				B7C4B6ABDDD58F6394D2AF58CDAD133B /* DefaulRegionPickViewSnapshotTests.swift */,
+				61DFA05D75618519E88FE1A40A7FD1CC /* DefaultRegionDataLoaderTests.swift */,
+				D012003352D7F310E6A33699C57DE4F7 /* RegionSelectorManagerTests.swift */,
+				0F4B05BD524875BDE717C86F416296B5 /* RegionSelectorViewSnapshotTests.swift */,
+				08431AA913D6D8FF70C867CDDCE2715C /* Helpers */,
+				0961B19086421F2B698FD3D15C92DEEE /* Snapshots */,
 			);
-			name = Model;
-			path = Sources/CCRegionSelector/Classes/Model;
-			sourceTree = "<group>";
-		};
-		EB03473982DAF7E9972D02756D0C4550 /* Loader */ = {
-			isa = PBXGroup;
-			children = (
-				00EDF2C6759C5E9E97A638E60BDE4E95 /* DefaultRegionDataLoader.swift */,
-				066A0E332E37126193E710D2DC2B31CD /* RegionDataLoader.swift */,
-			);
-			name = Loader;
-			path = Sources/CCRegionSelector/Classes/Loader;
-			sourceTree = "<group>";
-		};
-		F91F30A4B117ECD9BAD0E9A7A3695B7B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C5DFFA5DCF2D8EE7FCB4DE51D9CCBF76 /* SnapshotWindow.swift */,
-				CED99635A8650BA81D154DDF182A16FA /* UIView+Snapshot.swift */,
-				6772791675D6379AFB27022AC092735E /* XCTestCase+MemoryLeakTracking.swift */,
-				A4570B26FED5CAAE8CC13170BD5B393C /* XCTestCase+RegionInfo.swift */,
-				E473320A799E3C802EB22FBA6CCE51D8 /* XCTestCase+Snapshot.swift */,
-			);
-			name = Helpers;
-			path = Sources/CCRegionSelector/Tests/Helpers;
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +367,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3F60EA9304003D792935D6F075AEE7DC /* PBXTargetDependency */,
+				76B27860CEB5BA6494C10E17A4DA37E9 /* PBXTargetDependency */,
 			);
 			name = "Pods-CCRegionSelector_Example";
 			productName = Pods_CCRegionSelector_Example;
@@ -355,18 +376,18 @@
 		};
 		A7A65F9559F918D7A1827BE1D881FBB8 /* CCRegionSelector-Unit-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3D371D80C0413AF0BEA393FD1110A48 /* Build configuration list for PBXNativeTarget "CCRegionSelector-Unit-Tests" */;
+			buildConfigurationList = 83E6A46A325942F5B0C0DFE52E003500 /* Build configuration list for PBXNativeTarget "CCRegionSelector-Unit-Tests" */;
 			buildPhases = (
-				826094BDA63E7C3042BB941A57109ECB /* Sources */,
-				F916031DA4EA5253C5CFFCE6B6739EE3 /* Frameworks */,
-				044215AAE4357974A3FFD92585837C39 /* Resources */,
-				651FB0DC6991448F4945FBCEA474D509 /* [CP] Embed Pods Frameworks */,
-				5061BC9D78DDDB57AB6CC06B2BF5B96F /* [CP] Copy Pods Resources */,
+				4DA7452C93844E0D8E810BCC0966B8BF /* Sources */,
+				886CDB3D257686EA2F20F496BB8CF47A /* Frameworks */,
+				16D1262BBA619D990D8E99D31379B5DE /* Resources */,
+				3E21F00C8C90E63EF7D658E59AF0A41C /* [CP] Embed Pods Frameworks */,
+				B3C0AF404D915E37BAA0ABDDEB159145 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A014A1E36B10FF63E867F64B06509DD5 /* PBXTargetDependency */,
+				43E824AF2E6EB560C1ADEB13443DB3FD /* PBXTargetDependency */,
 			);
 			name = "CCRegionSelector-Unit-Tests";
 			productName = "CCRegionSelector-Unit-Tests";
@@ -421,7 +442,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		044215AAE4357974A3FFD92585837C39 /* Resources */ = {
+		16D1262BBA619D990D8E99D31379B5DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,25 +467,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5061BC9D78DDDB57AB6CC06B2BF5B96F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-resources.sh",
-				"${PODS_ROOT}/../../Sources/CCRegionSelector/Assets/diallingcode.json",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/diallingcode.json",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		651FB0DC6991448F4945FBCEA474D509 /* [CP] Embed Pods Frameworks */ = {
+		3E21F00C8C90E63EF7D658E59AF0A41C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -482,20 +485,42 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B3C0AF404D915E37BAA0ABDDEB159145 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-resources.sh",
+				"${PODS_ROOT}/../../Sources/CCRegionSelector/Assets/diallingcode.json",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/diallingcode.json",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		826094BDA63E7C3042BB941A57109ECB /* Sources */ = {
+		4DA7452C93844E0D8E810BCC0966B8BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				083BDD69D7463B49AC3A7553FEB1A4CF /* DefaultRegionDataLoaderTests.swift in Sources */,
-				0E501AA509BF31EEAA2AE761255FA641 /* RegionSelectorManagerTests.swift in Sources */,
-				C99C3E67562980074450F0E62C024860 /* SnapshotWindow.swift in Sources */,
-				99E373E559858ED31C3D4B21B105E7D2 /* UIView+Snapshot.swift in Sources */,
-				AD20FD487B55BBDB794E12D4306EB8F8 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
-				D87363AAF6D1BB82F5A1EAA19860F04C /* XCTestCase+RegionInfo.swift in Sources */,
-				42454A50B5993AC64FF5E0D392709254 /* XCTestCase+Snapshot.swift in Sources */,
+				606625B07B79111A7A9B08CBD0A46480 /* defaulRegionPickView_tw_regionInfo_load.png in Sources */,
+				0FDC3CBCAE36A17B8F5D3EA789A0F77B /* DefaulRegionPickViewSnapshotTests.swift in Sources */,
+				40969E3D5D7896049F1F967AA837618E /* DefaultRegionDataLoaderTests.swift in Sources */,
+				BDB04A2684BC8C500AB497444C08C5BF /* init_load.png in Sources */,
+				96A7A08DE26F8B3CD759AEBD8DF07E97 /* RegionSelectorManagerTests.swift in Sources */,
+				B7A12430F3355BFEEDA7BA7C63C33C95 /* RegionSelectorViewSnapshotTests.swift in Sources */,
+				55BE7E3E86DCF93AC834D0D18D3736BD /* SnapshotWindow.swift in Sources */,
+				751DC43068EBFF2B68907C88C12F305A /* UIView+Snapshot.swift in Sources */,
+				97591371002F41041B8A4F98CC9A859C /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				7232B11C622EC173275B084D583F47DF /* XCTestCase+RegionInfo.swift in Sources */,
+				4868697438013F44501C7720301D2944 /* XCTestCase+Snapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,47 +553,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F60EA9304003D792935D6F075AEE7DC /* PBXTargetDependency */ = {
+		43E824AF2E6EB560C1ADEB13443DB3FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CCRegionSelector;
 			target = AD18F0DF5D760019B980E5DBB1FA07C4 /* CCRegionSelector */;
-			targetProxy = 51A09A9F7B4CBC10F02134BF68A0888C /* PBXContainerItemProxy */;
+			targetProxy = 9195E8F760AE82347204AAA1C898FB31 /* PBXContainerItemProxy */;
 		};
-		A014A1E36B10FF63E867F64B06509DD5 /* PBXTargetDependency */ = {
+		76B27860CEB5BA6494C10E17A4DA37E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CCRegionSelector;
 			target = AD18F0DF5D760019B980E5DBB1FA07C4 /* CCRegionSelector */;
-			targetProxy = 1E218E310867BC83DF047F8A43B5CA61 /* PBXContainerItemProxy */;
+			targetProxy = C0C90E33B2874CCEC63636424A9E09F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01D5E7F10C998547CEE03116B111B355 /* Debug */ = {
+		290510372ABE090D168F5A06F3B44ACA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 193A94E329DED1C308E9C6A845E91588 /* CCRegionSelector.unit-tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = YES;
-				CODE_SIGNING_REQUIRED = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = "CCRegionSelector-Unit-Tests";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		22AEFF7C8F63BE9C3AE01F2E282C7B36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D81B41B4229315009FBB1F9059A6D920 /* CCRegionSelector.unit-tests.release.xcconfig */;
+			baseConfigurationReference = 678E606086BEF6473D0D1CE0397D215E /* CCRegionSelector.unit-tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -754,7 +756,7 @@
 		};
 		67C30670C78D3E1CB63EDD89ECDC8B4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ED75D7CFF2352FB59D88436A751D083 /* CCRegionSelector.release.xcconfig */;
+			baseConfigurationReference = 799E834908B2EAB71CD5F1F0543433FE /* CCRegionSelector.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -785,9 +787,32 @@
 			};
 			name = Release;
 		};
+		76FF4564678179B74A70E822AD164465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF940BA0ECDAACDE4B13C3E5F6F246E /* CCRegionSelector.unit-tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCRegionSelector/CCRegionSelector-Unit-Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "CCRegionSelector-Unit-Tests";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
 		7F1FAB4167822A7218B97D5F9F1D1C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BF50DA90DE10FE6C21A443670AD9AC8 /* CCRegionSelector.debug.xcconfig */;
+			baseConfigurationReference = 5E74AB991D9FC5FC80A96B053BC14CFE /* CCRegionSelector.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -873,20 +898,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		83E6A46A325942F5B0C0DFE52E003500 /* Build configuration list for PBXNativeTarget "CCRegionSelector-Unit-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FF4564678179B74A70E822AD164465 /* Debug */,
+				290510372ABE090D168F5A06F3B44ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		95B88FD1335A46BD694B5C1F62B93323 /* Build configuration list for PBXNativeTarget "Pods-CCRegionSelector_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66972A025C308781AA84C67C6EF32374 /* Debug */,
 				D215100518E160648AE54A58E1802154 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A3D371D80C0413AF0BEA393FD1110A48 /* Build configuration list for PBXNativeTarget "CCRegionSelector-Unit-Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				01D5E7F10C998547CEE03116B111B355 /* Debug */,
-				22AEFF7C8F63BE9C3AE01F2E282C7B36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

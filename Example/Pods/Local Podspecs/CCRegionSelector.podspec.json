@@ -25,7 +25,7 @@
     {
       "name": "Tests",
       "test_type": "unit",
-      "source_files": "Sources/CCRegionSelector/Tests/**/*"
+      "source_files": "Tests/CCRegionSelectorTests/**/*"
     }
   ],
   "swift_version": "5.0"

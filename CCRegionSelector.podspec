@@ -34,6 +34,6 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'Sources/CCRegionSelector/Tests/**/*'
+    test_spec.source_files = 'Tests/CCRegionSelectorTests/**/*'
   end
 end
