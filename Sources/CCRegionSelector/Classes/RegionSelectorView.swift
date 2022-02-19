@@ -5,7 +5,7 @@
 //  Created by Chad Chang on 2020/09/15.
 //
 
-import Foundation
+import UIKit
 
 public protocol RegionSelectorViewDelegate: AnyObject {
     func layoutPickView(_ pickerView: UIPickerView)
