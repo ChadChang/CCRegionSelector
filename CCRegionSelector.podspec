@@ -27,13 +27,13 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'CCRegionSelector/Classes/**/*'
-  s.resources = 'CCRegionSelector/Assets/*.{json}'
+  s.source_files = 'Sources/CCRegionSelector/Classes/**/*'
+  s.resources = 'Sources/CCRegionSelector/Assets/*.{json}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'CCRegionSelector/Tests/*.swift'
+    test_spec.source_files = 'Sources/CCRegionSelector/Tests/**/*'
   end
 end

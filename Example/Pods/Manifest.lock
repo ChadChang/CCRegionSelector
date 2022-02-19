@@ -1,6 +1,6 @@
 PODS:
-  - CCRegionSelector (1.0)
-  - CCRegionSelector/Tests (1.0)
+  - CCRegionSelector (1.1.0)
+  - CCRegionSelector/Tests (1.1.0)
 
 DEPENDENCIES:
   - CCRegionSelector (from `../`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CCRegionSelector: 1151cafe7eba43a9b7b6f1203ff75bf50b97ffe5
+  CCRegionSelector: fc6ba00bd98b1e1e5b169a6451a62ff7aab76db3
 
 PODFILE CHECKSUM: 542b0f5d02754516ea5697b74f538ea9c1afc559
 

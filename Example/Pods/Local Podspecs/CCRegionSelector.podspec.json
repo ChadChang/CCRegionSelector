@@ -1,6 +1,6 @@
 {
   "name": "CCRegionSelector",
-  "version": "1.0",
+  "version": "1.1.0",
   "summary": "A custom view to select a region",
   "swift_versions": "5.0",
   "description": "A custom view to select a region and written in Swift.",
@@ -14,18 +14,18 @@
   },
   "source": {
     "git": "https://github.com/ChadChang/CCRegionSelector.git",
-    "tag": "1.0"
+    "tag": "1.1.0"
   },
   "platforms": {
     "ios": "12.0"
   },
-  "source_files": "CCRegionSelector/Classes/**/*",
-  "resources": "CCRegionSelector/Assets/*.{json}",
+  "source_files": "Sources/CCRegionSelector/Classes/**/*",
+  "resources": "Sources/CCRegionSelector/Assets/*.{json}",
   "testspecs": [
     {
       "name": "Tests",
       "test_type": "unit",
-      "source_files": "CCRegionSelector/Tests/*.swift"
+      "source_files": "Sources/CCRegionSelector/Tests/**/*"
     }
   ],
   "swift_version": "5.0"
