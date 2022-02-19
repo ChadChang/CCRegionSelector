@@ -24,10 +24,10 @@ let package = Package(
         .target(
             name: "CCRegionSelector",
             dependencies: [],
-            resources: [
-                .process("diallingcode.json")]),
+            exclude: ["Assets"]),
         .testTarget(
             name: "CCRegionSelectorTests",
-            dependencies: ["CCRegionSelector"]),
+            dependencies: ["CCRegionSelector"],
+            exclude: ["Snapshots"]),
     ]
 )
