@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../Desktop/TestCCRegionSelectorSPM/TestCCRegionSelectorSPM.xcodeproj">
+      location = "group:../TestCCRegionSelectorSPM/TestCCRegionSelectorSPM.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CCRegionSelector.xcodeproj">
