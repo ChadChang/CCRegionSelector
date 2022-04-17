@@ -7,7 +7,7 @@
 
 | Default | Custom Picker|
 |---|---|
-| ![DEMO](https://github.com/ChadChang/CCRegionSelector/raw/master/Screenshot/demo.png)  |  ![Custom picker](https://github.com/ChadChang/CCRegionSelector/raw/master/Screenshot/custom_picker.png) |
+| ![DEMO](https://chadchang.github.io/images/ccregionselector/demo.png)  |  ![Custom picker](https://chadchang.github.io/images/ccregionselector/custom_picker.png) |
 
 ## Example
 
